@@ -1,4 +1,4 @@
-# CVTheque (Projet3)
+# CVThech (Projet3)
 
                                                  How to get our project ? 
                                                         
