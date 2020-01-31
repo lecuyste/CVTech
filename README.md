@@ -1,6 +1,6 @@
 # CVTheque (Projet3)
 
-                            How to get our project ? 
+                                                     How to get our project ? 
                                                         
 To use our project, you must follow these 2 steps: 
 
