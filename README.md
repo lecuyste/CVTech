@@ -1,4 +1,4 @@
-# CVThech (Projet3)
+# CVTech (Projet3)
 
                                                  How to get our project ? 
                                                         
