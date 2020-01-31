@@ -13,6 +13,7 @@ If you download it, you'll get a zip file, so unzip it and initialize it with gi
 
 
                                           Functionality of our site in schematic form :  
+                                          
 ```mermaid
 sequenceDiagram
 candidate ->> server: Resume creation
