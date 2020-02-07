@@ -9,32 +9,49 @@ spl_autoload_register('functionAutoLoader');
 
 
 
-// Plusieurs destinataires
-$to = 'stephanelemeilleut@free.fr'; // notez la virgule
+// Import PHPMailer classes into the global namespace
+// These must be at the top of your script, not inside a function
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
 
-// Sujet
-$subject = utf8_decode('Combat du siècle');
+// Load Composer's autoloader
+require 'vendor/autoload.php';
 
-// message
-$message = '
-     <html>
-      <head>
-       <title>Calendrier des anniversaires pour Août</title>
-       <meta charset="UTF-8">
-      </head>
-      <body>
-       <h1>CVTech vous remercie de votre participation </h1>
-      </body>
-     </html>
-     ';
+// Instantiation and passing `true` enables exceptions
+$mail = new PHPMailer(true);
 
-//Pour envoyer un mail HTML, l'en-tête Content-type doit être défini
-$headers[] = 'MIME-Version: 1.0';
-$headers[] = 'Content-type: text/html; charset=iso-8859-1';
+try {
+    //Server settings
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
+    $mail->isSMTP();                                            // Send using SMTP
+    $mail->Host       = 'localhost';                    // Set the SMTP server to send through
+/*    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+    $mail->Username   = 'user@example.com';                     // SMTP username
+    $mail->Password   = 'secret';                               // SMTP password*/
+   // $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
+    $mail->Port       = 1025;                                    // TCP port to connect to
 
-// En-têtes additionnels
-$headers[] = 'To: MailDev <maildevestnul@wanadoo.fr';
-$headers[] = 'From: Stephane le meilleur <stephanelemeilleut@free.fr>';
+    //Recipients
+    $mail->setFrom('michel@laposte.net', 'Michel');
+    $mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
+/*    $mail->addAddress('ellen@example.com');               // Name is optional
+    $mail->addReplyTo('info@example.com', 'Information');
+    $mail->addCC('cc@example.com');
+    $mail->addBCC('bcc@example.com');*/
 
-// Envoi
-mail($to, $subject, $message, implode("\r\n", $headers));
+    // Attachments
+    /*$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments*/
+    $mail->addAttachment('./assets/img/logoste.png', 'logo CV Tech');    // Optional name
+
+    // Content
+    $mail->isHTML(true);                                  // Set email format to HTML
+    $mail->Subject = 'Here is the subject';
+    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+    $mail->send();
+    echo 'Message has been sent';
+} catch (Exception $e) {
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+}
