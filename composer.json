@@ -1,7 +1,5 @@
 {
     "require": {
-        "phpmailer/phpmailer": "^6.1",
-        "jasongrimes/paginator": "~1.0",
-        "cocur/slugify": "^3.2"
+        "phpmailer/phpmailer": "~6.1"
     }
 }
