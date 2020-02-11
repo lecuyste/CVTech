@@ -30,7 +30,7 @@
             <li><a class="button btn-1" href="register.php">inscription</a></li>
         </ul>
         </nav>
-
+<div></div>
     </header>
 </div>
 <div class="clear"></div>
