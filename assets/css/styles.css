@@ -1,0 +1,108 @@
+@import "reset.css";
+
+/* //////////
+FONT
+/////////// */
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+h1 {
+    position: absolute;
+    left: -50000000000px;
+}
+
+/* //////////
+HEADER
+/////////// */
+.wrap {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+.navlogo img {
+    height: 60px;
+    width: 60px;
+    margin-right: 50px;
+}
+.nav-home {
+    float: left;
+    background-color: #657080;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    height: 100px;
+}
+.nav-home a {
+    float: left;
+    display: block;
+    color: #c9f1ff;
+    text-align: center;
+    padding: 5px 40px;
+    text-decoration: none;
+    font-size: 2em;
+    margin-top: 15px;
+    border-radius: 7px;
+    line-height: 50px;
+}
+#login {
+    margin-left: 280px;
+}
+/* /////////////////
+SURLIGNEMENT NAVIGATION
+///////////// //////*/
+.btn-1 {
+    letter-spacing: 0.05rem;
+    transition: 0.5s all ease-in-out;
+    position: relative;
+    background: transparent;
+}
+.btn-1:before {
+    border-top: 0.1rem solid #c9f1ff;
+    border-bottom: 0.1rem solid #c9f1ff;
+    display: block;
+    position: absolute;
+    background: transparent;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: 100%;
+    transition: 0.48s all ease-in-out;
+}
+.btn-1:hover {
+    letter-spacing: 0.4rem;
+}
+.btn-1:hover:before {
+    left: 15%;
+    right: 15%;
+}
+
+/* /////////////////
+SECTION SERVICE
+//////////////////*/
+.wrap2 {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+.service {
+    margin-top: 200px;
+    background: #4cae4c;
+    width: 100%;
+}
+.box-candidat {
+    width: 50%;
+    float: left;
+}
+.box-recruteur {
+    width: 50%;
+    float: left;
+}
+#box-service {
+    position: relative;
+}
+
+
+
