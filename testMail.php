@@ -22,34 +22,37 @@ require 'vendor/autoload.php';
 $mail = new PHPMailer(true);
 
 try {
+    header( 'content-type: text/html; charset=utf-8' );
     //Server settings
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
+    //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
     $mail->isSMTP();                                            // Send using SMTP
-    $mail->Host       = 'localhost';                    // Set the SMTP server to send through
-/*    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'user@example.com';                     // SMTP username
-    $mail->Password   = 'secret';                               // SMTP password*/
-   // $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
-    $mail->Port       = 1025;                                    // TCP port to connect to
+    $mail->Host       = 'smtp.mailtrap.io';                    // Set the SMTP server to send through
+    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+    $mail->Username   = '1c7b9a2f0c98f0';                     // SMTP username
+    $mail->Password   = '83c3b59fceb4af';                               // SMTP password
+    $mail->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
+    $mail->Port       = 2525;                                    // TCP port to connect to
 
     //Recipients
     $mail->setFrom('michel@laposte.net', 'Michel');
     $mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
-/*    $mail->addAddress('ellen@example.com');               // Name is optional
+    $mail->addAddress('ellen@example.com');               // Name is optional
     $mail->addReplyTo('info@example.com', 'Information');
     $mail->addCC('cc@example.com');
-    $mail->addBCC('bcc@example.com');*/
+    $mail->addBCC('bcc@example.com');
 
     // Attachments
     /*$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments*/
-    $mail->addAttachment('./assets/img/logoste.png', 'logo CV Tech');    // Optional name
+    $mail->addAttachment('./assets/img/logoste.png');    // Optional name
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Here is the subject';
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+    $mail->Subject = 'Deuxieme test';
+    $mailContent = "<h1>Send HTML Email using SMTP in PHP</h1>
+    <p>This is a test email I’m sending using SMTP mail server with PHPMailer.</p>";
+    $mail->Body = $mailContent;
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-
+    $mail->CharSet = 'UTF-8';
     $mail->send();
     echo 'Message has been sent';
 } catch (Exception $e) {
