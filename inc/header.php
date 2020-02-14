@@ -16,20 +16,30 @@
 
 <body>
 <div class="wrap">
-    <header class="header-home">
+    <header>
 
         <h1>CVTech</h1>
+        <nav>
+            <label for="show-menu" class="show-menu">show menu</label>
+            <input type="checkbox" id="show-menu" role="button">
 
-        <nav class="nav-home">
-        <ul>
-            <li><a class="navlogo" href="#"><img src="assets/img/logocvtech.png" alt="logo_nav"></a></li>
-            <li><a class="button btn-1" href="index.php">home</a></li>
-            <li><a class="button btn-1" href="">about</a></li>
-            <li><a class="button btn-1" href="">service</a></li>
-            <li><a class="button btn-1" id="login" href="login.php">connexion</a></li>
-            <li><a class="button btn-1" href="register.php">inscription</a></li>
-        </ul>
+            <ul id="menu">
+                <li><img class="nav-logo" src="assets/img/logocvtech.png" alt=""></li>
+                <li><a class="button btn-1" href="index.php">home</a></li>
+                <li><a class="button btn-1" href="">about</a></li>
+                <li><a class="button btn-1" href="">service</a></li>
+                <li id="login">
+                    <a class="button btn-1" href="#">connexion</a>
+                    <ul class="hidden">
+                        <li><a class="button btn-1" href="#">candidat</a></li>
+                        <li><a class="button btn-1" href="#">recruteur</a></li>
+                    </ul>
+                </li>
+                <li><a class="button btn-1" href="register.php">inscription</a></li>
+            </ul>
         </nav>
+
+
     </header>
 </div>
 <div class="clear"></div>

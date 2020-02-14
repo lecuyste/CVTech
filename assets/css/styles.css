@@ -14,56 +14,75 @@ h1 {
 /* //////////
 HEADER
 /////////// */
+header {
+    position: relative;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+}
 .wrap {
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
-
 }
-.navlogo img {
-    height: 60px;
-    width: 60px;
-    margin-right: 50px;
-}
-.nav-home {
+nav {
+    background-color:  #3e5b80;
     float: left;
-    background-color: #657080;
-    overflow: hidden;
     position: fixed;
     width: 100%;
-    z-index: 3;
-    height: 100px;
+    height: 60px;
 }
-.nav-home a {
-    float: left;
-    display: block;
-    color: #c9f1ff;
-    text-align: center;
-    padding: 5px 40px;
-    text-decoration: none;
-    font-size: 2em;
-    margin-top: 15px;
-    border-radius: 7px;
-    line-height: 50px;
+#menu li .nav-logo {
+    height: 60px;
+    width: 60px;
+    margin-right: 200px;
 }
 #login {
-    margin-left: 280px;
+    margin-left: 415px;
 }
-/* /////////////////
-SURLIGNEMENT NAVIGATION
-///////////// //////*/
+
+
+/* /////////////
+MENU NAVIGATION ET RESPONSIVE
+////////////////*/
+
+/*Strip the ul of padding and list styling*/
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position: absolute;
+}
+/*Create a horizontal list with spacing*/
+li {
+    display:inline-block;
+    float: left;
+    margin-right: 1px;
+
+}
+/*Style for menu links*/
+li a {
+    display:block;
+    min-width:140px;
+    height: 60px;
+    text-align: center;
+    line-height: 50px;
+    color: #a1b4cc;
+    background: #3e5b80;
+    text-decoration: none;
+}
+/*Hover state for top level links*/
 .btn-1 {
     letter-spacing: 0.05rem;
     transition: 0.5s all ease-in-out;
     position: relative;
-    background: transparent;
+    text-transform: uppercase;
 }
 .btn-1:before {
-    border-top: 0.1rem solid #c9f1ff;
-    border-bottom: 0.1rem solid #c9f1ff;
+    border-top: 0.1rem solid #a1b4cc;
+    border-bottom: 0.1rem solid #a1b4cc;
     display: block;
     position: absolute;
-    background: transparent;
     content: "";
     top: 0;
     bottom: 0;
@@ -75,9 +94,88 @@ SURLIGNEMENT NAVIGATION
     letter-spacing: 0.4rem;
 }
 .btn-1:hover:before {
-    left: 15%;
-    right: 15%;
+    left: 0%;
+    right: 0%;
 }
+/*Style for dropdown links*/
+li:hover ul a {
+    background: #a1b4cc;
+    color: #3e5b80;
+    height: 40px;
+    line-height: 40px;
+}
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+    color: #a1b4cc;
+    background: #3e5b80;
+}
+/*Hide dropdown links until they are needed*/
+li ul {
+    display: none;
+}
+/*Make dropdown links vertical*/
+li ul li {
+    display: block;
+    float: none;
+}
+
+
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+}
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+    text-decoration: none;
+    color: #a1b4cc;
+    background: #657080;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0;
+    height: 60px;
+    cursor: pointer;
+    display: none;
+}
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+/*Responsive Styles*/
+@media screen and (max-width : 1380px){
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+        z-index: 2;
+    }
+    /*Create vertical spacing*/
+    li {
+        background-color: #3e5b80;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+        z-index: 2;
+    }
+    #login {
+        margin: 0;
+    }
+    #menu li .nav-logo {
+        background-color: #3e5b80;
+        margin-left: auto;
+        margin-right: auto ;
+        display: block;
+    }
+}
+
 
 /* /////////////////
 SECTION SERVICE
@@ -103,6 +201,7 @@ SECTION SERVICE
 #box-service {
     position: relative;
 }
+
 
 
 
