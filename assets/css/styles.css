@@ -5,6 +5,7 @@ FONT
 /////////// */
 body {
     font-family: 'Open Sans Condensed', sans-serif;
+    background: #ccc;
 }
 h1 {
     position: absolute;
@@ -15,7 +16,7 @@ h1 {
 HEADER
 /////////// */
 header {
-    position: relative;
+    position: fixed;
     z-index: 1;
     top: 0;
     width: 100%;
@@ -28,7 +29,6 @@ header {
 nav {
     background-color:  #3e5b80;
     float: left;
-    position: fixed;
     width: 100%;
     height: 60px;
 }
@@ -175,6 +175,25 @@ input[type=checkbox]:checked ~ #menu{
         display: block;
     }
 }
+/* ////////////////////////
+PROGRESS BARRE
+/////////////////////// */
+
+/* The progress container (grey background) */
+.progress-container {
+    width: 100%;
+    height: 3px;
+    background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 3px;
+    background: #a1b4cc;
+    width: 0%;
+}
+
+
 
 
 /* /////////////////

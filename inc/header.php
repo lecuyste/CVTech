@@ -18,6 +18,7 @@
 <div class="wrap">
     <header>
 
+
         <h1>CVTech</h1>
         <nav>
             <label for="show-menu" class="show-menu">show menu</label>
@@ -38,8 +39,13 @@
                 <li><a class="button btn-1" href="register.php">inscription</a></li>
             </ul>
         </nav>
-
-
+        <div class="clear"></div>
+        <div class="header">
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+        </div>
     </header>
 </div>
-<div class="clear"></div>
+
+
