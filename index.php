@@ -1,145 +1,21 @@
 <?php
 include('inc/header.php'); ?>
 
-
    <div class="wrap2">
-        <div class="service">
-                <div id="box-service" class="box-candidat">
-                    <img src="assets/img/candidat.jpg" alt="">
-
-                </div>
-                <div id="box-service" class="box-recruteur">
-                    <img src="assets/img/recruteur.jpg" alt="">
-
-                </div>
-        </div>
-       <div class="content"></div>
-       <div>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Ab ad adipisci consectetur cumque enim error esse facere
-               fuga impedit itaque, laudantium natus neque nisi nostrum
-               obcaecati, provident saepe vel veritatis.</p>
-       </div>
-       <div>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Ab ad adipisci consectetur cumque enim error esse facere
-               fuga impedit itaque, laudantium natus neque nisi nostrum
-               obcaecati, provident saepe vel veritatis.</p>
-       </div>
-       <div>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Ab ad adipisci consectetur cumque enim error esse facere
-               fuga impedit itaque, laudantium natus neque nisi nostrum
-               obcaecati, provident saepe vel veritatis.</p>
-       </div>
-       <div>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Ab ad adipisci consectetur cumque enim error esse facere
-               fuga impedit itaque, laudantium natus neque nisi nostrum
-               obcaecati, provident saepe vel veritatis.</p>
-       </div>
-       <div>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Ab ad adipisci consectetur cumque enim error esse facere
-               fuga impedit itaque, laudantium natus neque nisi nostrum
-               obcaecati, provident saepe vel veritatis.</p>
-       </div>
-       <div>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Ab ad adipisci consectetur cumque enim error esse facere
-               fuga impedit itaque, laudantium natus neque nisi nostrum
-               obcaecati, provident saepe vel veritatis.</p>
-       </div>
-       <div>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Ab ad adipisci consectetur cumque enim error esse facere
-               fuga impedit itaque, laudantium natus neque nisi nostrum
-               obcaecati, provident saepe vel veritatis.</p>
-       </div>
-       <div>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Ab ad adipisci consectetur cumque enim error esse facere
-               fuga impedit itaque, laudantium natus neque nisi nostrum
-               obcaecati, provident saepe vel veritatis.</p>
-       </div>
-       <div>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Ab ad adipisci consectetur cumque enim error esse facere
-               fuga impedit itaque, laudantium natus neque nisi nostrum
-               obcaecati, provident saepe vel veritatis.</p>
-       </div>
-       <div>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Ab ad adipisci consectetur cumque enim error esse facere
-               fuga impedit itaque, laudantium natus neque nisi nostrum
-               obcaecati, provident saepe vel veritatis.</p>
-       </div>
-       <div>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Ab ad adipisci consectetur cumque enim error esse facere
-               fuga impedit itaque, laudantium natus neque nisi nostrum
-               obcaecati, provident saepe vel veritatis.</p>
-       </div>
-       <div>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Ab ad adipisci consectetur cumque enim error esse facere
-               fuga impedit itaque, laudantium natus neque nisi nostrum
-               obcaecati, provident saepe vel veritatis.</p>
-       </div>
-       <div>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Ab ad adipisci consectetur cumque enim error esse facere
-               fuga impedit itaque, laudantium natus neque nisi nostrum
-               obcaecati, provident saepe vel veritatis.</p>
-       </div>
-       <div>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Ab ad adipisci consectetur cumque enim error esse facere
-               fuga impedit itaque, laudantium natus neque nisi nostrum
-               obcaecati, provident saepe vel veritatis.</p>
-       </div><div>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Ab ad adipisci consectetur cumque enim error esse facere
-               fuga impedit itaque, laudantium natus neque nisi nostrum
-               obcaecati, provident saepe vel veritatis.</p>
-       </div>
-       <div>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Ab ad adipisci consectetur cumque enim error esse facere
-               fuga impedit itaque, laudantium natus neque nisi nostrum
-               obcaecati, provident saepe vel veritatis.</p>
-       </div>
-       <div>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Ab ad adipisci consectetur cumque enim error esse facere
-               fuga impedit itaque, laudantium natus neque nisi nostrum
-               obcaecati, provident saepe vel veritatis.</p>
-       </div>
-       <div>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Ab ad adipisci consectetur cumque enim error esse facere
-               fuga impedit itaque, laudantium natus neque nisi nostrum
-               obcaecati, provident saepe vel veritatis.</p>
-       </div>
-       <div>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Ab ad adipisci consectetur cumque enim error esse facere
-               fuga impedit itaque, laudantium natus neque nisi nostrum
-               obcaecati, provident saepe vel veritatis.</p>
-       </div>
-       <div>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Ab ad adipisci consectetur cumque enim error esse facere
-               fuga impedit itaque, laudantium natus neque nisi nostrum
-               obcaecati, provident saepe vel veritatis.</p>
-       </div>
-       <div>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Ab ad adipisci consectetur cumque enim error esse facere
-               fuga impedit itaque, laudantium natus neque nisi nostrum
-               obcaecati, provident saepe vel veritatis.</p>
-       </div>
-    </div>
+       <section class="service">
+           <div class="candidat_recruteur">
+               <div class="flex1"><img src="assets/img/candidat.jpg" alt=""></div>
+               <div class="flex2"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam inventore iure nesciunt nihil
+                       obcaecati odio omnis possimus provident quis recusandae.
+                       Delectus deleniti deserunt harum impedit iusto pariatur sequi ut velit.</p></div>
+           </div>
+           <div class="candidat_recruteur">
+               <div class="flex3"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam inventore iure nesciunt nihil
+                       obcaecati odio omnis possimus provident quis recusandae.
+                       Delectus deleniti deserunt harum impedit iusto pariatur sequi ut velit.</p></div>
+               <div class="flex4"><img src="assets/img/recruteur.jpg" alt=""></div>
+           </div>
+       </section>
 
 
 
