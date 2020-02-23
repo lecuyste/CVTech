@@ -29,7 +29,7 @@
                 </li>
                 <li><a class="button btn-1" href="index.php">home</a></li>
                 <li><a class="button btn-1" href="">about</a></li>
-                <li><a class="button btn-1" href="">service</a></li>
+                <li><a class="button btn-1" href="">services</a></li>
                 <li id="login">
                     <a class="button btn-1" href="#">connexion</a>
                     <ul class="hidden">

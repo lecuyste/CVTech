@@ -150,7 +150,7 @@ input[type=checkbox]:checked ~ #menu{
     display: block;
 }
 /*Responsive Styles*/
-@media screen and (max-width : 1380px){
+@media screen and (max-width : 1460px){
     /*Make dropdown links appear inline*/
     ul {
         position: static;
@@ -208,13 +208,36 @@ SECTION SERVICE
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
-}
-.service {
+    border: 2px dotted #3e5b80;
     margin-top: 100px;
 }
-.candidat_recruteur {
+.service {
     display: flex;
+    align-items: center;
 }
+.candidat {
+    flex-direction: row;
+}
+.recruteur {
+    flex-direction: row-reverse;
+}
+.img_candidat {
+    flex: 1 1 640px;
+}
+.text_candidat {
+    flex: 1 1 640px;
+    text-align: center;
+
+}
+.text_recruteur {
+   flex: 1 1 640px;
+    text-align: center;
+
+}
+.img_recruteur {
+    flex: 1 1 640px;
+}
+
 
 
 
