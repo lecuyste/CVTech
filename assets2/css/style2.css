@@ -1,0 +1,29 @@
+@import "reset2.css";
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#section1 {
+    height: 100%;
+}
+
+.background {
+    background-color:rgba(0,0,0,0.7);
+    height: 100%;
+}
+
+.title_home {
+    text-align: center;
+    font-size: 3em;
+    padding-top: 230px;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.espace {
+    display: inline-block;
+}
+
+
+
