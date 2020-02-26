@@ -1,6 +1,6 @@
 var res = "";
 
-function keyup1(t) {
+function onKeyup(t) {
     res = t.value;
     document.getElementById("cvTest").innerHTML = res;
 }

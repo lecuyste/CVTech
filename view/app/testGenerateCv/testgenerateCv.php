@@ -5,7 +5,7 @@
 <form action="#" method="post">
     <?php
     echo $form->label('test');
-    echo $form->input('test', null, 'keyup1(this)');
+    echo $form->input('test', null, 'onKeyup(this)');
     echo $form->error('test');
     echo '<br><br>' . $form->submit();
     ?>
