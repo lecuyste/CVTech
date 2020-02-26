@@ -25,8 +25,7 @@
             <input type="checkbox" id="show-menu" role="button">
 
             <ul id="menu">
-                <li><a class="logo-link" href="index.php"><img class="nav-logo" src="assets/img/logocvtech.png" alt=""></a>
-                </li>
+                <li><a class="logo-link" href="index.php"><img class="nav-logo" src="assets/img/logocvtech.png" alt=""></a></li>
                 <li><a class="button btn-1" href="index.php">home</a></li>
                 <li><a class="button btn-1" href="">about</a></li>
                 <li><a class="button btn-1" href="">services</a></li>

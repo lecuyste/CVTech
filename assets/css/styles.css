@@ -5,7 +5,8 @@ FONT
 /////////// */
 body {
     font-family: 'Open Sans Condensed', sans-serif;
-    background: #ccc;
+    background: rgb(204,204,204);
+    background: radial-gradient(circle, rgba(204,204,204,1) 70%, rgba(161,180,204,1) 100%);
 }
 h1 {
     position: absolute;
@@ -37,10 +38,18 @@ nav {
     height: 60px;
     width: 60px;
     margin-right: 200px ;
+    overflow: hidden;
 }
+
 #menu li .nav-logo {
     height: 60px;
     width: 60px;
+    transition: 0.5s;
+}
+#menu li .nav-logo:hover {
+    height: 60px;
+    width: 60px;
+    transform: scale(1.5);
 }
 #login {
     margin-left: 415px;
@@ -150,7 +159,7 @@ input[type=checkbox]:checked ~ #menu{
     display: block;
 }
 /*Responsive Styles*/
-@media screen and (max-width : 1460px){
+@media screen and (max-width : 1320px){
     /*Make dropdown links appear inline*/
     ul {
         position: static;
@@ -173,7 +182,7 @@ input[type=checkbox]:checked ~ #menu{
     #login {
         margin: 0;
     }
-    #menu li .nav-logo {
+    .logo-link {
         background-color: #3e5b80;
         margin-left: auto;
         margin-right: auto ;
@@ -194,7 +203,7 @@ PROGRESS BARRE
 /* The progress bar (scroll indicator) */
 .progress-bar {
     height: 3px;
-    background: #a1b4cc;
+    background: lime;
     width: 0%;
 }
 
@@ -202,8 +211,10 @@ PROGRESS BARRE
 
 
 /* /////////////////
-SECTION SERVICE
+SECTION SERVICE GESTION DES POSITIONS
 //////////////////*/
+
+
 .wrap2 {
     max-width: 1280px;
     width: 100%;
@@ -237,6 +248,15 @@ SECTION SERVICE
 .img_recruteur {
     flex: 1 1 640px;
 }
+/* /////////////////
+SECTION SERVICE STYLE
+//////////////////*/
+.service {
+
+
+}
+
+
 
 
 
