@@ -178,4 +178,4 @@ pdo.php
 config/config.php
 /vendor
 .idea/
-testMail.php
+view/app/testMail/testMail.php

@@ -12,6 +12,8 @@
       <nav>
           <ul>
               <li><a href="<?= $view->path('home'); ?>">Home</a></li>
+              <li><a href="<?= $view->path('testgenerateCv'); ?>">Generation de CV</a></li>
+              <li><a href="<?= $view->path('testMail'); ?>">Envoi de mail</a></li>
           </ul>
       </nav>
     </header>
