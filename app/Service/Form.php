@@ -12,9 +12,9 @@ class Form
     function __construct($error = array(),$method = 'post')
     {
         if($method == 'post') {
-            $this->post = $_POST;
+          $this->post = $_POST;
         } else {
-            $this->post = $_GET;
+          $this->post = $_GET;
         }
         $this->error = $error;
     }
@@ -97,11 +97,16 @@ class Form
      * @param $column
      * @return string
      */
-    public function select($name, $entitys, $column, $idd = 'id')
+    public function select($name, $entitys, $column, $data = null, $idd = 'id')
     {
         $html = '<select name="'.$name.'">';
         foreach ($entitys as $entity) {
-            $html .= '<option value="'.$entity->$idd.'">'.$entity->$column.'</option>';
+          if(!empty($data) && $data == $entity->$idd) {
+            $selected = ' selected="selected"';
+          } else {
+            $selected = '';
+          }
+          $html .= '<option value="'.$entity->$idd.'"'.$selected.'>'.$entity->$column.'</option>';
         }
         $html .= '</select>';
         return $html;

@@ -8,7 +8,7 @@ class Validation
     public function IsValid($errors)
     {
         foreach ($errors as $key => $value) {
-            if(!empty($value)) { // a verifier ++
+            if(!empty($value)) {
                 return false;
             }
         }

@@ -7,17 +7,19 @@
     <link rel="stylesheet" type="text/css" href="asset/css/style.css">
   </head>
   <body>
-
     <header>
       <nav>
-          <ul>
-              <li><a href="<?= $view->path('home'); ?>">Home</a></li>
-          </ul>
+        <ul>
+          <li><a href="<?= $view->path('home'); ?>">Home</a></li>
+          <li><a href="<?= $view->path('contact'); ?>">Contact</a></li>
+          <li><a href="<?= $view->path('sign'); ?>">Inscription</a></li>
+
+        </ul>
       </nav>
     </header>
 
     <div class="container">
-        <?= $content; ?>
+      <?= $content; ?>
     </div>
 
     <footer>
