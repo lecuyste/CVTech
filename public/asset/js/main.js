@@ -1,6 +1,7 @@
 var res = "";
 
-function onKeyup(t) {
-    res = t.value;
-    document.getElementById("cvTest").innerHTML = res;
+function onKeyup(t,$elemId) {
+   var  res = t.value;
+    var elem = document.getElementById($elemId);
+    elem.innerHTML = res;
 }
