@@ -35,16 +35,16 @@
 </div>
 
 <div id="cv" style="float: right;margin-right: 300px; width: 350px; height: 500px; background-color: aquamarine;">
-    <div id="titleCV" style="margin-top: 8px; margin: 0 auto;background-color: tomato; text-align: center;"><p id="titreCV" style="width: 100%;word-break: break-all;"></p></div>
+    <div id="titleCV" style="margin-top: 80px; margin: 0 auto;background-color: tomato; text-align: center;"><p id="titreCV" style="width: 100%;word-break: break-all;"></p></div>
     <div id="coord" style="background-color: darkgray; margin-top: 8px; width: 20%;margin-left: 10px">
-        <p id="nomSurname" style="width: 100%;word-break: break-all;"></p>
-        <div id="adresse" style="background-color: darkcyan">
+        <p id="nomSurname" style="width: 100%;word-break: break-all; background-color: coral;"></p>
+        <div id="adresse" style="background-color: darkcyan;">
             <p id="num" style="width: 100%;word-break: break-all;"></p>
             <p id="nameStreet" style="width: 100%;word-break: break-all;"></p>
             <p id="nameCity" style="width: 100%;word-break: break-all;"></p>
         </div>
-        <p id="phoneNumber" style="width: 100%;word-break: break-all;"></p>
-        <p id="mailAdress" style="width: 100%;word-break: break-all;"></p>
-        <p id="lienInternet" style="width: 100%;word-break: break-all;"></p>
+        <p id="phoneNumber" style="width: 100%;word-break: break-all;background-color: darkkhaki;"></p>
+        <p id="mailAdress" style="width: 100%;word-break: break-all; background-color: indianred;"></p>
+        <p id="lienInternet" style="width: 100%;word-break: break-all; background-color: lightgreen;"></p>
     </div>
 </div>

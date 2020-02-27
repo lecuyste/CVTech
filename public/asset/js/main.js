@@ -5,3 +5,6 @@ function onKeyup(t,$elemId) {
     var elem = document.getElementById($elemId);
     elem.innerHTML = res;
 }
+function ajoutURL() {
+
+}

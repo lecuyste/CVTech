@@ -107,4 +107,8 @@ class Form
         return $html;
     }
 
+    public function button($name, $function, $msg){
+        return '<button id="' . $name . ' onclick="' . $function . '>' . $msg . '</button>';
+    }
+
 }
