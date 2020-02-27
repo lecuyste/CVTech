@@ -203,22 +203,26 @@ PROGRESS BARRE
 /* The progress bar (scroll indicator) */
 .progress-bar {
     height: 3px;
-    background: lime;
+    background: #657080;
     width: 0%;
 }
-
-
 
 
 /* /////////////////
 SECTION SERVICE GESTION DES POSITIONS
 //////////////////*/
 .wrap2 {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #cccccc;
+}
+.wrap3 {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
-    border: 2px dotted #3e5b80;
-    margin-top: 100px;
+    margin-top: 500px;
+    background-color: #cccccc;
 }
 .service {
     display: flex;
@@ -257,12 +261,30 @@ RESPONSIVE SERVICE SECTION
         display: inline;
     }
 }
-
-
-
 /* /////////////////
 SECTION SERVICE STYLE
 //////////////////*/
+#titreservices1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: #3e5b80 ;
+}
+#titreservices2 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    padding: 15px 0;
+    color: #3e5b80 ;
+}
+.service_candidat1 {
+    font-size: 1.5em;
+    text-align: right;
+    margin-right: 50px;
+    font-style: italic;
+}
+#servicesliste {
+    font-size: 2em;
+    padding: 5px 0;
+}
 
 
 
