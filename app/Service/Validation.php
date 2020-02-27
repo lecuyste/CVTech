@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Service;
 
 class Validation
@@ -8,7 +9,7 @@ class Validation
     public function IsValid($errors)
     {
         foreach ($errors as $key => $value) {
-            if(!empty($value)) { // a verifier ++
+            if (!empty($value)) { // a verifier ++
                 return false;
             }
         }
@@ -24,7 +25,7 @@ class Validation
     public function emailValid($email)
     {
         $error = '';
-        if(empty($email) || (filter_var($email, FILTER_VALIDATE_EMAIL)) === false) {
+        if (empty($email) || (filter_var($email, FILTER_VALIDATE_EMAIL)) === false) {
             $error = 'Adresse email invalide.';
         }
         return $error;
@@ -40,19 +41,19 @@ class Validation
      * @return string $error
      */
 
-    public function textValid($text, $title, $min = 3,  $max = 50, $empty = true)
+    public function textValid($text, $title, $min = 3, $max = 50, $empty = true)
     {
 
         $error = '';
-        if(!empty($text)) {
+        if (!empty($text)) {
             $strtext = strlen($text);
-            if($strtext > $max) {
+            if ($strtext > $max) {
                 $error = 'Votre ' . $title . ' est trop long.';
-            } elseif($strtext < $min) {
+            } elseif ($strtext < $min) {
                 $error = 'Votre ' . $title . ' est trop court.';
             }
         } else {
-            if($empty) {
+            if ($empty) {
                 $error = 'Veuillez renseigner un ' . $title . '.';
             }
         }
@@ -60,5 +61,29 @@ class Validation
 
     }
 
+    public function phoneNumber($phone, $title, $empty = true)
+    {
+        $error = '';
+        if (!empty($phone)) {
+            $strtext = strlen($phone);
+            if (!preg_match('/^0[0-9]{9}$/', $phone)) {
+                $error = 'Votre ' . $title . ' doit seulement contenir 10 chiffres.';
+            }
+        } else {
+            if ($empty) {
+                $error = 'Veuillez renseigner un ' . $title . '.';
+            }
+        }
+        return $error;
+    }
+
+    public function urlValidate($lien){
+        $error='';
+        $lien = filter_var($lien, FILTER_SANITIZE_URL); //Supprime les caractères "illégales" dans une URL
+        if (filter_var($lien, FILTER_VALIDATE_URL, FILTER_FLAG_SCHEME_REQUIRED || FILTER_FLAG_HOST_REQUIRED || FILTER_FLAG_PATH_REQUIRED) === false){
+            $error='Veuillez rentrer un url valide.';
+        }
+        return $error;
+    }
 
 }
