@@ -9,7 +9,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&display=swap" rel="stylesheet">
-
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <title>CVTech</title>
 </head>
@@ -27,8 +27,8 @@
             <ul id="menu">
                 <li><a class="logo-link" href="index.php"><img class="nav-logo" src="assets/img/logocvtech.png" alt=""></a></li>
                 <li><a class="button btn-1" href="index.php">home</a></li>
-                <li><a class="button btn-1" href="">about</a></li>
                 <li><a class="button btn-1" href="">services</a></li>
+                <li><a class="button btn-1" href="">about</a></li>
                 <li id="login">
                     <a class="button btn-1" href="#">connexion</a>
                     <ul class="hidden">

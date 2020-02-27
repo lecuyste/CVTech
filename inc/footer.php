@@ -12,8 +12,11 @@
             document.getElementById("myBar").style.width = scrolled + "%";
         }</script>
     <script src="assets/js/main.js"></script>
-  <!--  winScroll : corps de la page ou mobile ?
-        check body et documentElement-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <!--  winScroll : corps de la page ou mobile ?
+          check body et documentElement-->
 
 </footer>
 </body>

@@ -6,7 +6,7 @@ FONT
 body {
     font-family: 'Open Sans Condensed', sans-serif;
     background: rgb(204,204,204);
-    background: radial-gradient(circle, rgba(204,204,204,1) 70%, rgba(161,180,204,1) 100%);
+    background: radial-gradient(circle, rgba(204,204,204,1) 21%, rgba(101,112,128,1) 100%);
 }
 h1 {
     position: absolute;
@@ -213,8 +213,6 @@ PROGRESS BARRE
 /* /////////////////
 SECTION SERVICE GESTION DES POSITIONS
 //////////////////*/
-
-
 .wrap2 {
     max-width: 1280px;
     width: 100%;
@@ -226,35 +224,45 @@ SECTION SERVICE GESTION DES POSITIONS
     display: flex;
     align-items: center;
 }
-.candidat {
+.box_candidat {
     flex-direction: row;
 }
-.recruteur {
+.box_recruteur {
     flex-direction: row-reverse;
 }
-.img_candidat {
+.imgs_services {
     flex: 1 1 640px;
+    max-width: 100%;
+    height: auto;
 }
 .text_candidat {
     flex: 1 1 640px;
     text-align: center;
-
 }
 .text_recruteur {
-   flex: 1 1 640px;
-    text-align: center;
-
-}
-.img_recruteur {
     flex: 1 1 640px;
+    text-align: center;
 }
+/* /////////////////
+RESPONSIVE SERVICE SECTION
+//////////////////*/
+@media screen and (max-width : 640px){
+    .wrap2 {
+        max-width: 640px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .service {
+        flex-direction: column;
+        display: inline;
+    }
+}
+
+
+
 /* /////////////////
 SECTION SERVICE STYLE
 //////////////////*/
-.service {
-
-
-}
 
 
 
