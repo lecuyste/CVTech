@@ -12,7 +12,7 @@ class DefaultController extends Controller
 
     public function index()
     {
-      $message = 'Bienvenue sur le framework MVC';
+      $message = 'CVTECH';
 
 
       $this->render('app.default.frontpage',array(
