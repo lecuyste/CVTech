@@ -1,15 +1,17 @@
 <?php
-$page = 'home';
+$page = 'homepage';
 if(!empty($_GET['page'])) {
     $page = $_GET['page'];
 }
 
 
-if($page == 'home') {
+if($page == 'homepage') {
     $controller = new App\Controller\DefaultController();
     $controller->index();
-}
-else {
+} elseif ($page == 'contact') {
+    $controller = new App\Controller\ContactController();
+    $controller->contact();
+} else {
     $controller = new App\Controller\DefaultController();
     $controller->Page404();
 }
