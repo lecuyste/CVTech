@@ -119,7 +119,7 @@ class UserModel extends Model
     /**
      * @return mixed
      */
-    public function getPassword()
+    public function getPass()
     {
         return $this->password;
     }

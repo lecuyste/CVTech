@@ -48,7 +48,7 @@ class UserController extends Controller
             $post = $this->cleanXss($_POST);
             $this->debug($post);
             $v = new Validation();
-            $errors['email'] = $v->emailValid($post['mail']);
+            $errors['mail'] = $v->emailValid($post['mail']);
 
             if ($v->IsValid($errors) == true) {
                 $user = UserModel::userLogin($post['mail']);
@@ -56,7 +56,7 @@ class UserController extends Controller
                     $_SESSION = array(
                         'id'    => $user->id,
                         'nom'   => $user->name,
-                        'prenom'=> $user->surnname,
+                        'prenom'=> $user->surname,
                         'role'  => $user->role,
                         'mail' => $user->mail,
 
