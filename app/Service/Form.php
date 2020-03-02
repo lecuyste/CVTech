@@ -106,7 +106,15 @@ class Form
         $html .= '</select>';
         return $html;
     }
-
+    public function selectCheckbox($name, $idname, $entitys, $column, $idd = 'id')
+    {
+        $html = '<select name="'.$name.'" id="'.$idname.'"multiple>';
+        foreach ($entitys as $entity) {
+            $html .= '<option value="'.$entity->$idd.'">'.$entity->$column.'</option>';
+        }
+        $html .= '</select>';
+        return $html;
+    }
     public function button($name, $function, $msg){
         return '<button id="' . $name . ' onclick="' . $function . '>' . $msg . '</button>';
     }
