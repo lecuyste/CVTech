@@ -1,3 +1,4 @@
+
 var res = "";
 
 function onKeyup(t,$elemId) {
@@ -8,3 +9,7 @@ function onKeyup(t,$elemId) {
 function ajoutURL() {
 
 }
+
+new SlimSelect({
+    select: '#languages'
+});
