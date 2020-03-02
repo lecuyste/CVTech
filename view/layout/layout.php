@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Framework POO</title>
     <link rel="stylesheet" type="text/css" href="asset/css/style.css">
-  </head>
-  <body>
+    <link rel="stylesheet" type="text/css" href="asset/css/form.css">
+</head>
+<body>
 
-    <header>
-      <nav>
-          <ul>
-              <li><a href="<?= $view->path('contact'); ?>">contact</a></li>
-          </ul>
-      </nav>
-    </header>
+<header>
+    <nav>
+        <ul>
+            <li><a href="<?= $view->path('contact'); ?>">contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <div class="container">
-        <?= $content; ?>
-    </div>
+<div class="container">
+    <?= $content; ?>
+</div>
 
-    <footer>
+<footer>
 
-    </footer>
+</footer>
 
-    <script src="asset/js/main.js"></script>
-  </body>
+<script src="asset/js/main.js"></script>
+</body>
 </html>

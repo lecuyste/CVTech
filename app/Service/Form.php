@@ -86,9 +86,9 @@ class Form
      * @param $name
      * @return string
      */
-    public function label($name)
+    public function label($name, $class = '')
     {
-        return '<label for="'.$name.'">'.ucfirst($name).'</label>';
+        return '<label for="'.$name.'" class="'. $class . '">'.ucfirst($name).'</label>';
     }
 
     /**

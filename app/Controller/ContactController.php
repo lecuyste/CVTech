@@ -24,12 +24,11 @@ class ContactController extends Controller
             $errors['message'] = $v->textValid($post['message'], 'message', 20, 500);
             if($v->isValid($errors)) {
                 ContactModel::insert($post);
-                $this->redirection();
+                $this->redirect('index.php?page=redirection');
             }
-
         }
         $form = new Form($errors);
-        $message = 'Vous avez une question ?';
+        $message = 'Formulaire de contact';
 
         $this->render('app.contact.contact', array(
             'message' => $message,
