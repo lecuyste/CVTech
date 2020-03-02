@@ -8,8 +8,10 @@ if(!empty($_GET['page'])) {
 if($page == 'home') {
     $controller = new App\Controller\DefaultController();
     $controller->index();
-}
-else {
+} elseif ($page == 'contact') {
+    $controller = new App\Controller\ContactController();
+    $controller->contact();
+} else {
     $controller = new App\Controller\DefaultController();
     $controller->Page404();
 }

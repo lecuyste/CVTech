@@ -11,7 +11,7 @@
     <header>
       <nav>
           <ul>
-              <li><a href="<?= $view->path('home'); ?>">Home</a></li>
+              <li><a href="<?= $view->path('contact'); ?>">contact</a></li>
           </ul>
       </nav>
     </header>
