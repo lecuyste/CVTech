@@ -26,11 +26,12 @@
         echo $form->input('mail', null, 'onKeyup(this,\'mailAdress\')');
         echo $form->error('mail');
         echo "<br>" . $form->label('lien(s) : ');
-        echo $form->input('lien', null, 'onKeyup(this,\'lienInternet\')');
+        echo $form->input('lien', null, 'onKeyup(this,\'lienInternet\')', 'liste-liens');
+        echo $form->buttonAjoutInput('ajoutLien', 'liste-liens', 'Ajouter un lien');
         echo $form->error('lien');
         echo "<br>" . $form->label('langage(s) de programmation maitrisé(s) : ');
         echo $form->selectCheckbox('langages', 'languages', $languages, 'name');
-        echo $form->error('lien');
+        echo $form->error('langages');
         echo '<br><br>' . $form->submit();
         ?>
     </form>

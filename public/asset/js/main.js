@@ -6,10 +6,13 @@ function onKeyup(t,$elemId) {
     var elem = document.getElementById($elemId);
     elem.innerHTML = res;
 }
-function ajoutURL() {
-
-}
-
 new SlimSelect({
     select: '#languages'
 });
+
+function ajoutItems($list) {
+     var NewItems = $('.'+$list +' input').first().clone();
+     $(NewItems).appendTo('.'+$list);
+     return false;
+}
+

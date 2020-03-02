@@ -23,9 +23,9 @@ class Form
      * @param $html string
      * @return string
      */
-    private function arround($html)
+    private function arround($html, $class = "")
     {
-        return '<div class="form-control">'.$html.'</div>';
+        return '<div class="form-control '.$class.'">'.$html.'</div>';
     }
 
     /**
@@ -45,9 +45,9 @@ class Form
      * @param $name string
      * @return string
      */
-    public function input($name,$data = null, $keyup = null)
+    public function input($name,$data = null, $keyup = null, $class = '')
     {
-        return $this->arround('<input type="text" id="'.$name.'" name="'.$name.'" value="'.$this->getValue($name,$data).'" onkeyup="' . $keyup . '">');
+        return $this->arround('<input type="text" id="'.$name.'" name="'.$name.'" value="'.$this->getValue($name,$data).'" onkeyup="' . $keyup . '">', $class);
     }
 
     /**
@@ -115,8 +115,8 @@ class Form
         $html .= '</select>';
         return $html;
     }
-    public function button($name, $function, $msg){
-        return '<button id="' . $name . ' onclick="' . $function . '>' . $msg . '</button>';
+    public function buttonAjoutInput($name, $list, $msg){
+        return '<button type="button" id="' . $name . '" onclick="ajoutItems(\''.$list.'\')">' . $msg . '</button>';
     }
 
 }
