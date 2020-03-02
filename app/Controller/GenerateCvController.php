@@ -4,6 +4,7 @@
 namespace App\Controller;
 
 
+use App\Model\languageModel;
 use App\Service\Form;
 use App\Weblitzer\Controller;
 use App\Model\GenerateCvModel;
@@ -16,6 +17,7 @@ class GenerateCvController extends Controller
     {
         $message = 'Génération de votre CV';
         $errors = array();
+        $languages = languageModel::all();
         if (!empty($_POST['submitted'])) {
             $post = $this->cleanXss($_POST);
             $valid = new Validation();
@@ -32,6 +34,7 @@ class GenerateCvController extends Controller
         $this->render('app.testGenerateCv.testgenerateCv', array(
             'message' => $message,
             'form' => $form,
+            'languages' => $languages,
         ));
     }
 }
