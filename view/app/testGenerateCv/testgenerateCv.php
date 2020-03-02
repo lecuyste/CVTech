@@ -1,4 +1,3 @@
-
 <h1 style="font-size:25px;margin-top: 100px;margin-left: 50px; color: darkolivegreen">
     <?= $message; ?>
 </h1>
@@ -28,6 +27,9 @@
         echo $form->error('mail');
         echo "<br>" . $form->label('lien(s) : ');
         echo $form->input('lien', null, 'onKeyup(this,\'lienInternet\')');
+        echo $form->error('lien');
+        echo "<br>" . $form->label('langage(s) de programmation maitrisé(s) : ');
+        echo $form->selectCheckbox('langages', 'languages', $languages, 'name');
         echo $form->error('lien');
         echo '<br><br>' . $form->submit();
         ?>
