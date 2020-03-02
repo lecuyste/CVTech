@@ -80,7 +80,7 @@ class Validation
     public function urlValidate($lien){
         $error='';
         $lien = filter_var($lien, FILTER_SANITIZE_URL); //Supprime les caractères "illégales" dans une URL
-        if (filter_var($lien, FILTER_VALIDATE_URL, FILTER_FLAG_SCHEME_REQUIRED || FILTER_FLAG_HOST_REQUIRED || FILTER_FLAG_PATH_REQUIRED) === false){
+        if (!empty($lien) && filter_var($lien, FILTER_VALIDATE_URL, FILTER_FLAG_SCHEME_REQUIRED || FILTER_FLAG_HOST_REQUIRED || FILTER_FLAG_PATH_REQUIRED) === false){
             $error='Veuillez rentrer un url valide.';
         }
         return $error;
