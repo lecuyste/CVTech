@@ -11,6 +11,9 @@ if($page == 'home') {
 } elseif ($page == 'contact') {
     $controller = new App\Controller\ContactController();
     $controller->contact();
+} elseif ($page == 'redirection') {
+    $controller = new App\Controller\ContactController();
+    $controller->redirection();
 } else {
     $controller = new App\Controller\DefaultController();
     $controller->Page404();

@@ -2,7 +2,6 @@
 
 namespace App\Controller;
 
-use App\Model\JardinierModel;
 use App\Weblitzer\Controller;
 use App\Model\ContactModel;
 use App\Weblitzer\Model;
@@ -16,7 +15,6 @@ class ContactController extends Controller
 {
     public function contact()
     {
-        $contact = ContactModel::all();
         $errors = array();
         if (!empty($_POST['submitted'])) {
             $post = $this->cleanXss($_POST);
@@ -26,7 +24,7 @@ class ContactController extends Controller
             $errors['message'] = $v->textValid($post['message'], 'message', 20, 500);
             if($v->isValid($errors)) {
                 ContactModel::insert($post);
-                $this->redirectIndex();
+                $this->redirection();
             }
 
         }
@@ -38,11 +36,13 @@ class ContactController extends Controller
             'form' => $form,
         ));
     }
-    private function redirectIndex()
+    public function redirection()
     {
-        $this->redirect('index.php?page=contact');
+        $redirection = 'Merci pour votre message !';
+        $this->render('app.contact.redirection', array(
+            'redirection' => $redirection,
+        ));
     }
-
 }
 
 
