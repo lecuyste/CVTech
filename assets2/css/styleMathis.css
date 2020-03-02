@@ -62,7 +62,7 @@ body {
 
 #pres {
     text-align: center;
-    padding-top: 130px;
+    padding-top: 110px;
     font-size: 1.2em;
     letter-spacing: 1px;
     line-height: 30px;
@@ -84,7 +84,7 @@ body {
     float: left;
     max-width: 1200px;
     width: 33.3333%;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .team img {
@@ -122,4 +122,31 @@ body {
 
 .desct {
     left: 29.5%;
+}
+
+.team_title {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2.5em;
+    margin-top: 25px;
+}
+
+footer {
+    height: 100px;
+    background-color: black;
+}
+
+.linkf {
+    color: white;
+    padding-right: 100px;
+    letter-spacing: 3px;
+    margin-bottom: -15px;
+}
+
+.link1 {
+    margin-left: 25%;
+}
+
+.list {
+    padding-top: 40px;
 }
