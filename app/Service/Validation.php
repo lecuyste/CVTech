@@ -86,4 +86,12 @@ class Validation
         return $error;
     }
 
+    public function selectCheckboxValidate($name){
+        $error='';
+        if (!isset($_POST[$name]) || empty($_POST[$name])){
+            $error='Faîtes au moins un choix dans la liste';
+        }
+        return $error;
+    }
+
 }

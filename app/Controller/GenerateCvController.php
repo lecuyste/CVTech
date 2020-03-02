@@ -29,6 +29,7 @@ class GenerateCvController extends Controller
             $errors['phone'] = $valid->phoneNumber($post['phone'], 'numéro de téléphone');
             $errors['mail'] = $valid->emailValid($post['mail']);
             $errors['lien'] = $valid->urlValidate($post['lien']);
+            $errors['langages'] = $valid->selectCheckboxValidate('langages');
         }
         $form = new Form($errors);
         $this->render('app.testGenerateCv.testgenerateCv', array(
