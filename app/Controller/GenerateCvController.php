@@ -16,6 +16,8 @@ class GenerateCvController extends Controller
     public function generateCV()
     {
         $message = 'Génération de votre CV';
+        $experience = 'Mes expériences';
+        $formation = 'Mes formations';
         $errors = array();
         $languages = languageModel::all();
         if (!empty($_POST['submitted'])) {
@@ -25,17 +27,26 @@ class GenerateCvController extends Controller
             $errors['nom'] = $valid->textValid($post['nom'], 'nom et prénom', 2, 20);
             $errors['numAdress'] = $valid->textValid($post['numAdress'], 'numéro de rue', 1, 10);
             $errors['street'] = $valid->textValid($post['street'], 'nom de la rue', 2, 50);
+            $errors['codePostal'] = $valid->validateCodePostal($post['codePostal'], 'code postal');
             $errors['city'] = $valid->textValid($post['city'], 'nom de la ville', 2, 50);
             $errors['phone'] = $valid->phoneNumber($post['phone'], 'numéro de téléphone');
             $errors['mail'] = $valid->emailValid($post['mail']);
             $errors['lien'] = $valid->urlValidate($post['lien']);
             $errors['langages'] = $valid->selectCheckboxValidate('langages');
+            $errors['formationName'] = $valid->textValid($post['formationName'], 'nom  de formation', 2, 50);
+            $errors['formationCity'] = $valid->textValid($post['formationCity'], 'ville de formation', 2, 50);
+            $errors['formationDate'] = $valid->validateYear($post['formationDate'], 'date de formation');
+            $errors['experienceName'] = $valid->textValid($post['experienceName'], 'nom d\'experience', 2, 50);
+            $errors['experienceCity'] = $valid->textValid($post['experienceCity'], 'ville de formation', 2, 50);
+            $errors['experienceDate'] = $valid->validateYear($post['experienceDate'], 'date d\'expérience');
         }
         $form = new Form($errors);
         $this->render('app.testGenerateCv.testgenerateCv', array(
             'message' => $message,
             'form' => $form,
             'languages' => $languages,
+            'experience' => $experience,
+            'formation' => $formation,
         ));
     }
 }

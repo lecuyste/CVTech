@@ -118,5 +118,8 @@ class Form
     public function buttonAjoutInput($name, $list, $msg){
         return '<button type="button" id="' . $name . '" onclick="ajoutItems(\''.$list.'\')">' . $msg . '</button>';
     }
+    public function buttonCloneDiv($name, $class, $msg){
+        return '<button type="button" id="' . $name . '" onclick="cloneDiv(\''.$class.'\')">' . $msg . '</button>';
+    }
 
 }

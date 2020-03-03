@@ -15,4 +15,9 @@ function ajoutItems($list) {
      $(NewItems).appendTo('.'+$list);
      return false;
 }
+function cloneDiv($class) {
+    var NewItems = $('.'+$class).first().clone();
+    $(NewItems).appendTo('.'+$class);
+    return false;
+}
 

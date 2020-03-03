@@ -16,6 +16,9 @@
         echo "<br>" . $form->label('nom de rue : ');
         echo $form->input('street', null, 'onKeyup(this,\'nameStreet\')');
         echo $form->error('street');
+        echo "<br>" . $form->label('code postal : ');
+        echo $form->input('codePostal', null, 'onKeyup(this,\'postalCode\')');
+        echo $form->error('codePostal');
         echo "<br>" . $form->label('ville : ');
         echo $form->input('city', null, 'onKeyup(this,\'nameCity\')');
         echo $form->error('city');
@@ -32,6 +35,32 @@
         echo "<br>" . $form->label('langage(s) de programmation maitrisé(s) : ');
         echo $form->selectCheckbox('langages', 'languages', $languages, 'name');
         echo $form->error('langages');
+        echo '<br><h2 style="font-size:20px;margin-top: 10px;margin-left: 50px;">' . $experience . '</h2>';
+        echo "<div class='liste-experience'>";
+        echo "<br>" . $form->label('nom de votre experience : ');
+        echo $form->input('experienceName', null, 'onKeyup(this,\'nameExperience\')');
+        echo $form->error('experienceName');
+        echo "<br>" . $form->label('date de votre experience : ');
+        echo $form->input('experienceDate', null, 'onKeyup(this,\'dateExperience\')');
+        echo $form->error('experienceDate');
+        echo "<br>" . $form->label('ville de votre expérience : ');
+        echo $form->input('experienceCity', null, 'onKeyup(this,\'cityExperience\')');
+        echo $form->error('experienceCity');
+        echo "</div>";
+        echo "<br>" . $form->buttonCloneDiv('ajoutExperience', 'liste-experience', 'Ajouter une experience');
+        echo '<br><h2 style="font-size:20px;margin-top: 10px;margin-left: 50px;">' . $formation . '</h2>';
+            echo "<div class='liste-formation'>";
+        echo "<br>" . $form->label('nom de votre formation : ');
+        echo $form->input('formationName', null, 'onKeyup(this,\'nameFormation\')');
+        echo $form->error('formationName');
+        echo "<br>" . $form->label('date de votre formation : ');
+        echo $form->input('formationDate', null, 'onKeyup(this,\'dateFormation\')');
+        echo $form->error('formationDate');
+        echo "<br>" . $form->label('ville de votre formation : ');
+        echo $form->input('formationCity', null, 'onKeyup(this,\'cityFormation\')');
+        echo $form->error('formationCity');
+        echo "</div>";
+        echo "<br>" . $form->buttonCloneDiv('ajoutFormation', 'liste-formation', 'Ajouter une formation');
         echo '<br><br>' . $form->submit();
         ?>
     </form>
@@ -44,10 +73,17 @@
         <div id="adresse" style="background-color: darkcyan;">
             <p id="num" style="width: 100%;word-break: break-all;"></p>
             <p id="nameStreet" style="width: 100%;word-break: break-all;"></p>
+            <p id="postalCode" style="width: 100%;word-break: break-all;"></p>
             <p id="nameCity" style="width: 100%;word-break: break-all;"></p>
         </div>
         <p id="phoneNumber" style="width: 100%;word-break: break-all;background-color: darkkhaki;"></p>
         <p id="mailAdress" style="width: 100%;word-break: break-all; background-color: indianred;"></p>
         <p id="lienInternet" style="width: 100%;word-break: break-all; background-color: lightgreen;"></p>
+        <p id="nameExperience" style="width: 100%;word-break: break-all; background-color: red;"></p>
+        <p id="dateExperience" style="width: 100%;word-break: break-all; background-color: red;"></p>
+        <p id="cityExperience" style="width: 100%;word-break: break-all; background-color: red;"></p>
+        <p id="nameFormation" style="width: 100%;word-break: break-all; background-color: green;"></p>
+        <p id="dateFormation" style="width: 100%;word-break: break-all; background-color: green;"></p>
+        <p id="cityFormation" style="width: 100%;word-break: break-all; background-color: green;"></p>
     </div>
 </div>

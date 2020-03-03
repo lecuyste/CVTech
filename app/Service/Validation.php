@@ -77,6 +77,38 @@ class Validation
         return $error;
     }
 
+    public function validateCodePostal($codePostal, $title, $empty = true)
+    {
+        $error = '';
+        if (!empty($codePostal)) {
+            $strtext = strlen($codePostal);
+            if (!preg_match('/[0-9]{5}$/', $codePostal)) {
+                $error = 'Votre ' . $title . ' doit seulement contenir 5 chiffres.';
+            }
+        } else {
+            if ($empty) {
+                $error = 'Veuillez renseigner un ' . $title . '.';
+            }
+        }
+        return $error;
+    }
+
+    public function validateYear($year, $title, $empty = true)
+    {
+        $error = '';
+        if (!empty($year)) {
+            $strtext = strlen($year);
+            if (!preg_match('/[0-9]{4}$/', $year)) {
+                $error = 'Votre ' . $title . ' doit contenir 4 chiffres.';
+            }
+        } else {
+            if ($empty) {
+                $error = 'Veuillez renseigner un ' . $title . '.';
+            }
+        }
+        return $error;
+    }
+
     public function urlValidate($lien){
         $error='';
         $lien = filter_var($lien, FILTER_SANITIZE_URL); //Supprime les caractères "illégales" dans une URL
