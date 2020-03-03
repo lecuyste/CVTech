@@ -45,7 +45,7 @@ class Form
      * @param $name string
      * @return string
      */
-    public function input($name,$data = null)
+    public function input($name, $data = null)
     {
         return $this->arround('<input type="text" id="'.$name.'" name="'.$name.'" value="'.$this->getValue($name,$data).'">');
     }
@@ -57,7 +57,7 @@ class Form
      */
     public function textarea($name, $data = null)
     {
-        return $this->arround('<textarea name="'.$name.'">'.$this->getValue($name,$data).'</textarea>');
+        return $this->arround('<textarea name="'.$name.'" rows="10" cols="120">'.$this->getValue($name,$data).'</textarea>');
     }
 
     /**

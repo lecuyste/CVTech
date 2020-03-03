@@ -20,8 +20,8 @@ class ContactController extends Controller
             $post = $this->cleanXss($_POST);
             $v = new Validation();
             $errors['mail'] = $v->emailValid($post['mail']);
-            $errors['object'] = $v->textValid($post['object'], 'object', 5, 100);
-            $errors['message'] = $v->textValid($post['message'], 'message', 20, 500);
+            $errors['object'] = $v->textValid($post['object'], 'object', 2, 50);
+            $errors['message'] = $v->textValid($post['message'], 'message', 10, 500);
             if($v->isValid($errors)) {
                 ContactModel::insert($post);
                 $this->redirect('index.php?page=redirection');

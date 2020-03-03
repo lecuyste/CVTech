@@ -1,25 +1,30 @@
-<div class="wrapForm">
-    <h1 style="font-size:25px;margin-top: 100px;margin-left: 50px; color: darkolivegreen">
-        <?= $message; ?>
-    </h1>
-    <h2 class="textintro">Vous avez une question ? </h2>
-    <div class="lignes"></div>
+<section id="globalForm">
+    <div class="wrapForm">
+        <h2 style="font-size: 2.8em;text-align: center; text-transform: uppercase; color: #3E5B80;">
+            <?= $message; ?>
+        </h2>
+        <h2 class="textintro">Vous avez une question ? </h2>
+        <div class="lignes"></div>
 
-    <form id="globalForm" action="" method="post">
-        <?php echo $form->label('Votre email :'); ?>
-        <?php echo $form->input('mail'); ?>
-        <?php echo $form->error('mail'); ?>
+        <form action="#globalForm" method="post">
+            <div class="w50">
+                <?php echo $form->label('Votre email :'); ?>
+                <?php echo $form->input('mail'); ?>
+                <?php echo $form->error('mail'); ?>
+            </div>
+            <div class="w50">
+                <?php echo $form->label('Votre object :'); ?>
+                <?php echo $form->input('object'); ?>
+                <?php echo $form->error('object'); ?>
+            </div>
+            <div class="w100">
+                <?php echo $form->label('Votre message :'); ?>
+                <?php echo $form->textarea('message'); ?>
+                <?php echo $form->error('message'); ?>
+            </div>
+            <?php echo $form->submit('submitted'); ?>
+        </form>
 
-        <?php echo $form->label('Votre object :', 'toto'); ?>
-        <?php echo $form->input('object'); ?>
-        <?php echo $form->error('object'); ?>
-
-        <?php echo $form->label('Votre message :'); ?>
-        <?php echo $form->textarea('message'); ?>
-        <?php echo $form->error('message'); ?>
-
-        <?php echo $form->submit('submitted'); ?>
-    </form>
-
-    <div class="lignes"></div>
-</div>
+        <div class="lignes"></div>
+    </div>
+</section>
