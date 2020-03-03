@@ -1,5 +1,5 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets2/css/style2.css">
+<link rel="stylesheet" href="assets2/css/styleMathis.css">
 
 
 <body>
@@ -14,13 +14,14 @@
 <section id="section2">
     <div class="wrap100">
     <p id="pres">
-        CVTech est un site site web pratique qui permet le partage rapide de CV entre candidat et recruteur. Le site
+        CVTech est un site web pratique qui permet le partage rapide de CV entre candidat et recruteur. Le site
         met 2 espaces différents à disposition, un espace pour les candidats afin qu'ils puissent charger leur CV et
         l'envoyer aux recruteurs de leur choix, ainsi qu'un espace recruteur afin que ceux-ci puissent consulter les
         CV qui leur ont été envoyé.
     </p>
         <br>
-        <p id="pres2">YO</p>
+        <p id="pres2">CVTech a été créé en 2020 par une équipe de 5 développeurs WEB.</p>
+        <h4 class="team_title">L'équipe :</h4>
         <div class="team yann">
             <img id="team" src="assets2/img/yann.png" alt=""/>
             <p class="desc">Yann - Développeur front</p>
@@ -50,8 +51,7 @@
     </div>
 </section>
 
-
-
+<?php include_once('assets2/inc/footer.php')   ?>
 
 </body>
 

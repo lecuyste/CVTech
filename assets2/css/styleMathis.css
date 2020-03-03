@@ -4,13 +4,11 @@ body {
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
-#section1 {
-    height: 100%;
-}
+
 
 .background {
     background-color:rgba(0,0,0,0.7);
-    height: 100%;
+    padding-bottom: 341px;
 }
 
 .title_home {
