@@ -9,17 +9,17 @@
         <form action="#globalForm" method="post">
             <div class="w50">
                 <?php echo $form->label('Votre email :'); ?>
-                <?php echo $form->input('mail'); ?>
+                <?php echo $form->input('mail', 'Ex : monadresse@monmail.com'); ?>
                 <?php echo $form->error('mail'); ?>
             </div>
             <div class="w50">
-                <?php echo $form->label('Votre object :'); ?>
-                <?php echo $form->input('object'); ?>
+                <?php echo $form->label('Votre objet :'); ?>
+                <?php echo $form->input('object', 'Ex : Titre du message'); ?>
                 <?php echo $form->error('object'); ?>
             </div>
             <div class="w100">
                 <?php echo $form->label('Votre message :'); ?>
-                <?php echo $form->textarea('message'); ?>
+                <?php echo $form->textarea('message', 'Ex : Mon message'); ?>
                 <?php echo $form->error('message'); ?>
             </div>
             <?php echo $form->submit('submitted'); ?>
