@@ -22,9 +22,10 @@ class ContactController extends Controller
             $errors['mail'] = $v->emailValid($post['mail']);
             $errors['object'] = $v->textValid($post['object'], 'object', 2, 50);
             $errors['message'] = $v->textValid($post['message'], 'message', 10, 500);
-            if($v->isValid($errors)) {
+            if ($v->isValid($errors)) {
                 ContactModel::insert($post);
                 $this->redirect('index.php?page=redirection');
+                unset($_POST);
             }
         }
         $form = new Form($errors);
@@ -35,6 +36,7 @@ class ContactController extends Controller
             'form' => $form,
         ));
     }
+
     public function redirection()
     {
         $redirection = 'Merci pour votre message !';
