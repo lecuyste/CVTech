@@ -1,11 +1,11 @@
 <?php
-$page = 'home';
+$page = 'homepage';
 if(!empty($_GET['page'])) {
     $page = $_GET['page'];
 }
 
 
-if($page == 'home') {
+if($page == 'homepage') {
     $controller = new App\Controller\DefaultController();
     $controller->index();
 } elseif ($page == 'contact') {
