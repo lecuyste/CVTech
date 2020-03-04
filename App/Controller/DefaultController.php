@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Service\Controller;
+use App\Weblitzer\Controller;
 
 /**
  *
@@ -12,22 +12,12 @@ class DefaultController extends Controller
 
     public function index()
     {
-<<<<<<< HEAD:App/Controller/DefaultController.php
-        $message = 'CVTech';
-=======
->>>>>>> develop:app/Controller/DefaultController.php
 
 
         $this->render('app.homepage.homepage',array(
 
         ));
     }
-
-    public function logout()
-    {
-        $this->render('app.default.logout');
-    }
-
 
     /**
      *

@@ -2,23 +2,23 @@
 
 namespace App\Model;
 
-use App\Service\Database;
-use App\Service\Model;
+use App\Weblitzer\Database;
+use App\Weblitzer\Model;
 use App\App;
 
 class UserModel extends Model
 {
     protected static $table = 'users';
 
-    private int $id;
-    private $name;
-    private $surname;
-    private $mail;
-    private $password;
-    private $created_at;
-    private $modified_at;
-    private $roles;
-    private $token;
+    protected $id;
+    protected $name;
+    protected $surname;
+    protected $mail;
+    protected $password;
+    protected $created_at;
+    protected $modified_at;
+    protected $roles;
+    protected $token;
 
 
     public static function insertUser(string $name, string $surname, string $mail, string $password): void

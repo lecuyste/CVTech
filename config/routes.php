@@ -17,7 +17,7 @@ elseif ($page == 'login') {
     $controller->login();
 }
 elseif($page == 'logout'){
-    $controller = new App\Controller\DefaultController();
+    $controller = new App\Controller\UserController();
     $controller->logout();
 } elseif ($page == 'contact') {
     $controller = new App\Controller\ContactController();

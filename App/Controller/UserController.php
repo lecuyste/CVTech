@@ -2,10 +2,11 @@
 
 namespace App\Controller;
 
-use App\Service\Controller;
+use App\Weblitzer\Controller;
 use App\Model\UserModel;
-use App\Repository\Form;
-use App\Repository\Validation;
+use App\Service\Form;
+use App\Service\Validation;
+use App\Weblitzer\Model;
 
 class UserController extends Controller
 {
@@ -31,7 +32,7 @@ class UserController extends Controller
             }
         }
 
-        $this->render('app.default.inscription', array(
+        $this->render('app.logs.inscription', array(
             'title' => $title,
             'form' => $form,
             'errors' => $errors
@@ -46,7 +47,6 @@ class UserController extends Controller
         $form = new Form($errors, 'post');
         if (isset($_POST['submitted'])) {
             $post = $this->cleanXss($_POST);
-            $this->debug($post);
             $v = new Validation();
             $errors['mail'] = $v->emailValid($post['mail']);
 
@@ -69,10 +69,15 @@ class UserController extends Controller
             $errors['mail'] = 'Error ';
         }
 
-        $this->render('app.default.login', array(
+        $this->render('app.logs.login', array(
             'title' => $title,
             'form'  => $form,
             'errors' => $errors
         ));
     }
+    public function logout()
+    {
+        $this->render('app.logs.logout');
+    }
+
 }

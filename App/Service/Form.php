@@ -1,5 +1,5 @@
 <?php
-namespace App\Repository;
+namespace App\Service;
 /**
  *  class Form
  *  Permet de generer un formulaire
@@ -42,51 +42,32 @@ class Form
 
     }
     /**
-     * @param $type string
-     * @param $class string
      * @param $name string
      * @return string
      */
-<<<<<<< HEAD:App/Repository/Form.php
-    public function input($type,$name,$class = NULL,$data = null)
+    public function input($name, $placeholder, $type = 'text', $data = null)
     {
-        return $this->arround('<input class="'.$class.'" type="'.$type.'" id="'.$name.'" name="'.$name.'" value="'
-            .$this->getValue
-            ($name,
-                $data).'">');
-=======
-    public function input($name, $placeholder, $data = null)
-    {
-        return $this->arround('<input type="text" id="'.$name.'" name="'.$name.'" placeholder="'.$placeholder.'" value="'.$this->getValue($name,$data).'">');
->>>>>>> develop:app/Service/Form.php
+        return $this->arround('<input type="'.$type.'" id="'.$name.'" name="'.$name.'" placeholder="'.$placeholder.'" value="'.$this->getValue($name,$data).'">');
     }
 
     /**
      * @param $name
-     * @param $class string
      * @param null $data
      * @return string
      */
-<<<<<<< HEAD:App/Repository/Form.php
-    public function textarea($name, $class = NULL, $data = null)
-    {
-        return $this->arround('<textarea class="'.$class.'" name="'.$name.'">'.$this->getValue($name,$data).'</textarea>');
-=======
     public function textarea($name, $placeholder, $data = null)
     {
         return $this->arround('<textarea name="'.$name.'" placeholder="'.$placeholder.'" rows="10" cols="120">'.$this->getValue($name,$data).'</textarea>');
->>>>>>> develop:app/Service/Form.php
     }
 
     /**
      * @param $name string
-     * @param $class string
      * @param $value string
      * @return string
      */
-    public function submit($name = 'submitted',$value='Envoyer',$class = NULL)
+    public function submit($name = 'submitted',$value='Envoyer')
     {
-        return '<input type="submit" name="'.$name.'" class="'.$class.'" id="'.$name.'" value="'.$value.'">';
+        return '<input type="submit" name="'.$name.'" id="'.$name.'" value="'.$value.'">';
     }
 
     /**
@@ -103,57 +84,32 @@ class Form
 
     /**
      * @param $name
-     * @param $class string
      * @return string
      */
-<<<<<<< HEAD:App/Repository/Form.php
-    public function label($name,$label,$class=NULL )
-    {
-        return '<label for="'.$name.'" class="'.$class.'">'.ucfirst($label).'</label>';
-=======
     public function label($name, $class = '')
     {
         return '<label for="'.$name.'" class="'. $class . '">'.ucfirst($name).'</label>';
->>>>>>> develop:app/Service/Form.php
     }
 
     /**
      * @param $name
-     * @param $class string
      * @param $entitys
      * @param $column
      * @return string
      */
-    public function select($name, $entitys, $column, $idd = 'id', $class = NULL)
+    public function select($name, $entitys, $column, $idd = 'id')
     {
-        $html = '<select name="'.$name.'" class="'.$class.'">';
+        $html = '<select name="'.$name.'">';
         foreach ($entitys as $entity) {
             $html .= '<option value="'.$entity->$idd.'">'.$entity->$column.'</option>';
         }
         $html .= '</select>';
         return $html;
     }
-
     public function inputCheckbox($type,$name,$value,$class=NULL)
     {
         return $this->arround('<input type="'.$type.'" id="'.$name.'" name="'.$name.'" class="'.$class.'" value="'
             .$value.'">');
     }
-
-    public function divStart($class=NULL)
-    {
-        return '<div class="'.$class.'">';
-    }
-
-    public function divEnd()
-    {
-        return '</div>';
-    }
-
-    public function h3(string $titre,string $id_title)
-    {
-        return '<h3 id="'.$id_title.'">Veuillez rentrer '.$titre.'</h3>';
-    }
-
 
 }
