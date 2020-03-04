@@ -31,6 +31,7 @@
         echo "<br>" . $form->label('lien(s) : ');
         echo $form->input('lien', null, 'onKeyup(this,\'lienInternet\')', 'liste-liens');
         echo $form->buttonAjoutInput('ajoutLien', 'liste-liens', 'Ajouter un lien');
+        echo $form->buttonRemoveClone('removeLien', 'liste-liens', 'Supprimer un lien');
         echo $form->error('lien');
         echo "<br>" . $form->label('langage(s) de programmation maitrisé(s) : ');
         echo $form->selectCheckbox('langages', 'languages', $languages, 'name');
@@ -48,6 +49,7 @@
         echo $form->error('experienceCity');
         echo "</div>";
         echo "<br>" . $form->buttonCloneDiv('ajoutExperience', 'liste-experience', 'Ajouter une experience');
+        echo $form->buttonRemoveClone('removeExperience', 'liste-experience', 'Supprimer une expérience');
         echo '<br><h2 style="font-size:20px;margin-top: 10px;margin-left: 50px;">' . $formation . '</h2>';
             echo "<div class='liste-formation'>";
         echo "<br>" . $form->label('nom de votre formation : ');
@@ -61,6 +63,7 @@
         echo $form->error('formationCity');
         echo "</div>";
         echo "<br>" . $form->buttonCloneDiv('ajoutFormation', 'liste-formation', 'Ajouter une formation');
+        echo $form->buttonRemoveClone('removeFormation', 'liste-formation', 'Supprimer une formation');
         echo '<br><br>' . $form->submit();
         ?>
     </form>

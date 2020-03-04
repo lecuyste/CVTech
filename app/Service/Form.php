@@ -121,5 +121,8 @@ class Form
     public function buttonCloneDiv($name, $class, $msg){
         return '<button type="button" id="' . $name . '" onclick="cloneDiv(\''.$class.'\')">' . $msg . '</button>';
     }
+    public function buttonRemoveClone($name, $cloneId, $msg){
+        return '<button type="button" id="' . $name . '" onclick="removeClone(\''.$cloneId.'\')">' . $msg . '</button>';
+    }
 
 }

@@ -20,4 +20,7 @@ function cloneDiv($class) {
     $(NewItems).appendTo('.'+$class);
     return false;
 }
-
+function removeClone($cloneId){
+    $($cloneId + ':last-child').remove();
+    return false;
+}
