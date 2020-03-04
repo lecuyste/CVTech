@@ -4,6 +4,7 @@
 namespace App\Controller;
 
 
+use App\Model\JardiniersModel;
 use App\Model\languageModel;
 use App\Service\Form;
 use App\Weblitzer\Controller;
@@ -20,6 +21,7 @@ class GenerateCvController extends Controller
         $formation = 'Mes formations';
         $errors = array();
         $languages = languageModel::all();
+        $cvs = GenerateCvModel::all();
         if (!empty($_POST['submitted'])) {
             $post = $this->cleanXss($_POST);
             $valid = new Validation();
@@ -39,6 +41,10 @@ class GenerateCvController extends Controller
             $errors['experienceName'] = $valid->textValid($post['experienceName'], 'nom d\'experience', 2, 50);
             $errors['experienceCity'] = $valid->textValid($post['experienceCity'], 'ville de formation', 2, 50);
             $errors['experienceDate'] = $valid->validateYear($post['experienceDate'], 'date d\'expérience');
+            if ($valid->IsValid($errors)) {
+                GenerateCvModel::insert($post['titre'], $post['phone'], $post['street'], $post['codePostal'], $post['city'], $post['lien'], $post['langages'], $cvs['id'], $cvs['id'], $post['experienceName'], $post['experienceDate'], $post['experienceCity'], $post['formationName'], $post['formationDate'], $post['formationCity'] );
+                $this->redirect('index.php?page=testGenerateCv');
+            }
         }
         $form = new Form($errors);
         $this->render('app.testGenerateCv.testgenerateCv', array(
@@ -47,6 +53,7 @@ class GenerateCvController extends Controller
             'languages' => $languages,
             'experience' => $experience,
             'formation' => $formation,
+            'cvs' => $cvs,
         ));
     }
 }
