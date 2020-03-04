@@ -29,7 +29,7 @@ class AdminController extends controller
         $this->render('app.admin.detail', ['admin' => $admin]);
     }
 
-    public function addadmin()
+    public function addAdmin()
     {
         $errors = array();
         if (!empty($_POST['submitted'])) {
