@@ -20,6 +20,7 @@ class UserModel extends Model
     private $roles;
     private $token;
 
+
     public static function insertUser(string $name, string $surname, string $mail, string $password): void
     {
         $token = UserModel::generateToken(255);

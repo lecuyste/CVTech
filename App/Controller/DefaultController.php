@@ -19,6 +19,12 @@ class DefaultController extends Controller
         ));
     }
 
+    public function logout()
+    {
+        $this->render('app.default.logout');
+    }
+
+
     /**
      *
      */

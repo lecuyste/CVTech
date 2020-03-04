@@ -6,7 +6,7 @@
 <form action="#" method="post">
 <?php
 
-echo $form->label('mail', ' votre mail');
+echo $form->label('mail', ' Renseignez votre mail');
 echo $form->input('email','mail');
 echo $form->error('mail');
 

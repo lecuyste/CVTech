@@ -71,7 +71,8 @@ class UserController extends Controller
 
         $this->render('app.default.login', array(
             'title' => $title,
-            'form'  => $form
+            'form'  => $form,
+            'errors' => $errors
         ));
     }
 }

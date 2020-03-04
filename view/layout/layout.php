@@ -14,8 +14,28 @@
 <header>
     <div>
 
+
+
+        <?php if (empty($_SESSION)) { ?>
+
             <a href="<?= $view->path('inscription'); ?>">Inscription</a>
             <a href="<?= $view->path('login'); ?>">Connexion</a>
+
+        <?php } elseif ($_SESSION['role'] == "admin") { ?>
+            <li >
+                <a href="<?= $view->path('logout') ?>">Déconnexion</a>
+            </li>
+
+        <?php } else { ?>
+            <li >
+                <a href="<?= $view->path('account') ?>">Mon compte</a>
+            </li>
+            <li >
+                <a href="<?= $view->path('logout') ?>">Déconnexion</a>
+            </li>
+
+
+        <?php } ?>
 
     </div>
 
