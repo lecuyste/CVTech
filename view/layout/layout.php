@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-
+  
 <head>
 
     <link rel="stylesheet" href="asset/css/styleYann.css">
     <link rel="stylesheet" href="asset/css/styleMathis.css">
-
-
+    <link rel="stylesheet" type="text/css" href="asset/css/form.css">
+    <title>CVTech</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <title>CVTech</title>
 </head>
 <body>
 
 <div class="wrap">
     <header>
-
 
         <h1>CVTech</h1>
         <nav>
@@ -32,6 +28,7 @@
                 <li><a class="button btn-1" href="<?= $view->path('homepage'); ?>">home</a></li>
                 <li><a class="button btn-1" href="#services">services</a></li>
                 <li><a class="button btn-1" href="">about</a></li>
+              <li><a href="<?= $view->path('contact'); ?>">contact</a></li>
                 <li id="login">
                     <a class="button btn-1" href="#">connexion</a>
                     <ul class="hidden">
@@ -76,7 +73,5 @@
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
-<!--  winScroll : corps de la page ou mobile ?
-      check body et documentElement-->
 </body>
 </html>
