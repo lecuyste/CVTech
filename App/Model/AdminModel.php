@@ -66,7 +66,7 @@ class AdminModel extends Model
     /**
      * @return mixed
      */
-    public function getsUsername()
+    public function getsSurname()
     {
         return $this->surname;
     }
@@ -74,7 +74,7 @@ class AdminModel extends Model
     /**
      * @param mixed $surname
      */
-    public function setsUsername($surname): void
+    public function setsSurname($surname): void
     {
         $this->surname = $surname;
     }
