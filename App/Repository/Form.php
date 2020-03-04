@@ -47,12 +47,18 @@ class Form
      * @param $name string
      * @return string
      */
+<<<<<<< HEAD:App/Repository/Form.php
     public function input($type,$name,$class = NULL,$data = null)
     {
         return $this->arround('<input class="'.$class.'" type="'.$type.'" id="'.$name.'" name="'.$name.'" value="'
             .$this->getValue
             ($name,
                 $data).'">');
+=======
+    public function input($name, $placeholder, $data = null)
+    {
+        return $this->arround('<input type="text" id="'.$name.'" name="'.$name.'" placeholder="'.$placeholder.'" value="'.$this->getValue($name,$data).'">');
+>>>>>>> develop:app/Service/Form.php
     }
 
     /**
@@ -61,9 +67,15 @@ class Form
      * @param null $data
      * @return string
      */
+<<<<<<< HEAD:App/Repository/Form.php
     public function textarea($name, $class = NULL, $data = null)
     {
         return $this->arround('<textarea class="'.$class.'" name="'.$name.'">'.$this->getValue($name,$data).'</textarea>');
+=======
+    public function textarea($name, $placeholder, $data = null)
+    {
+        return $this->arround('<textarea name="'.$name.'" placeholder="'.$placeholder.'" rows="10" cols="120">'.$this->getValue($name,$data).'</textarea>');
+>>>>>>> develop:app/Service/Form.php
     }
 
     /**
@@ -94,9 +106,15 @@ class Form
      * @param $class string
      * @return string
      */
+<<<<<<< HEAD:App/Repository/Form.php
     public function label($name,$label,$class=NULL )
     {
         return '<label for="'.$name.'" class="'.$class.'">'.ucfirst($label).'</label>';
+=======
+    public function label($name, $class = '')
+    {
+        return '<label for="'.$name.'" class="'. $class . '">'.ucfirst($name).'</label>';
+>>>>>>> develop:app/Service/Form.php
     }
 
     /**

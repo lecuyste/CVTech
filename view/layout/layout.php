@@ -10,7 +10,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&display=swap" rel="stylesheet">
+<<<<<<< HEAD
     <script src="https://unpkg.com/scrollreveal"></script>
+=======
+>>>>>>> develop
 </head>
 <body>
 
@@ -30,7 +33,10 @@
                 <li><a class="button btn-1" href="#services">services</a></li>
                 <li><a class="button btn-1" href="">about</a></li>
               <li><a href="<?= $view->path('contact'); ?>">contact</a></li>
+<<<<<<< HEAD
                 <?php if (empty($_SESSION)) { ?>
+=======
+>>>>>>> develop
                 <li id="login">
                     <a class="button btn-1" href="#">connexion</a>
                     <ul class="hidden">
@@ -45,6 +51,7 @@
                         <li><a class="button btn-1" href="#">recruteur</a></li>
                     </ul>
                 </li>
+<<<<<<< HEAD
                 <?php } elseif ($_SESSION['role'] == "admin") { ?>
                     <li >
                         <a href="<?= $view->path('logout') ?>">Déconnexion</a>
@@ -60,6 +67,8 @@
 
 
                 <?php } ?>
+=======
+>>>>>>> develop
             </ul>
         </nav>
         <div class="clear"></div>
@@ -87,6 +96,10 @@
 </footer>
 
 <script src="asset/js/main.js"></script>
+<<<<<<< HEAD
+=======
+<script src="https://unpkg.com/scrollreveal"></script>
+>>>>>>> develop
 <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
 </body>

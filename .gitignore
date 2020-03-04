@@ -175,10 +175,10 @@ pdo.php
 /node_modules/
 /package-lock.json
 
-<<<<<<< HEAD
-=======
-config/config.php
+
 /vendor
 .idea/
 testMail.php
->>>>>>> develop
+config/config.php
+
+

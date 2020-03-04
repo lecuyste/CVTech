@@ -12,10 +12,14 @@ class DefaultController extends Controller
 
     public function index()
     {
+<<<<<<< HEAD:App/Controller/DefaultController.php
         $message = 'CVTech';
+=======
+>>>>>>> develop:app/Controller/DefaultController.php
 
-        $this->render('app.default.frontpage',array(
-            'message' => $message,
+
+        $this->render('app.homepage.homepage',array(
+
         ));
     }
 

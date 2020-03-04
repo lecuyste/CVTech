@@ -1,11 +1,10 @@
 <?php
-$page = 'home';
+$page = 'homepage';
 if(!empty($_GET['page'])) {
     $page = $_GET['page'];
 }
 
-
-if($page == 'home') {
+if($page == 'homepage') {
     $controller = new App\Controller\DefaultController();
     $controller->index();
 }
@@ -20,9 +19,13 @@ elseif ($page == 'login') {
 elseif($page == 'logout'){
     $controller = new App\Controller\DefaultController();
     $controller->logout();
-}
-
-else {
+} elseif ($page == 'contact') {
+    $controller = new App\Controller\ContactController();
+    $controller->contact();
+} elseif ($page == 'redirection') {
+    $controller = new App\Controller\ContactController();
+    $controller->redirection();
+} else {
     $controller = new App\Controller\DefaultController();
     $controller->Page404();
 }
