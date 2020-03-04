@@ -7,7 +7,7 @@ use App\Weblitzer\Controller;
 use App\Model\AdminModel;
 use App\Service\Form;
 use App\Service\Validation;
-use App\Weblitzer\Database;
+use App\Weblitzer\Model;
 
 class AdminController extends controller
 {

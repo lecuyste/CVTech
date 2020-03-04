@@ -2,7 +2,9 @@
 
 namespace App\Model;
 
-use App\Weblitzer\Model;
+use App\App;
+use App\Service\Model;
+use App\Service\Database;
 
 class AdminModel extends Model
 {
