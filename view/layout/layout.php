@@ -28,7 +28,7 @@
                 <li><a class="button btn-1" href="<?= $view->path('homepage'); ?>">home</a></li>
                 <li><a class="button btn-1" href="#services">services</a></li>
                 <li><a class="button btn-1" href="">about</a></li>
-              <li><a href="<?= $view->path('contact'); ?>">contact</a></li>
+                <li><a class="button btn-1" href="<?= $view->path('contact'); ?>">contact</a></li>
                 <li id="login">
                     <a class="button btn-1" href="#">connexion</a>
                     <ul class="hidden">
