@@ -3,8 +3,7 @@
 
 <head>
 
-    <link rel="stylesheet" href="asset/css/styleYann.css">
-    <link rel="stylesheet" href="asset/css/styleMathis.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
 
     <meta charset="utf-8">
@@ -14,8 +13,8 @@
 
     <title>CVTech</title>
 </head>
-<body>
 
+<body>
 <div class="wrap">
     <header>
 
@@ -26,10 +25,8 @@
             <input type="checkbox" id="show-menu" role="button">
 
             <ul id="menu">
-                <li><a class="logo-link" href="<?= $view->path('homepage'); ?>"><img class="nav-logo"
-                                                                                 src="asset/img/logocvtech.png" alt=""></a>
-                </li>
-                <li><a class="button btn-1" href="<?= $view->path('homepage'); ?>">home</a></li>
+                <li><a class="logo-link" href="index.php"><img class="nav-logo" src="assets/img/logocvtech.png" alt=""></a></li>
+                <li><a class="button btn-1" href="index.php">home</a></li>
                 <li><a class="button btn-1" href="#services">services</a></li>
                 <li><a class="button btn-1" href="">about</a></li>
                 <li id="login">
@@ -58,25 +55,3 @@
 </div>
 
 
-<div class="container">
-    <?= $content; ?>
-</div>
-
-<footer>
-    <div class="list">
-        <a class="linkf link1" href="">Home</a>
-        <a class="linkf" href="">Services</a>
-        <a class="linkf" href="">About</a>
-        <a class="linkf" href="">Mentions Légales</a>
-        <a class="linkf link5" href="">CGU</a>
-    </div>
-</footer>
-
-<script src="asset/js/main.js"></script>
-<script src="https://unpkg.com/scrollreveal"></script>
-<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-
-<!--  winScroll : corps de la page ou mobile ?
-      check body et documentElement-->
-</body>
-</html>
