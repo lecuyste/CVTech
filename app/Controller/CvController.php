@@ -11,6 +11,10 @@ class CvController extends Controller
 {
     public function display()
     {
+        if(!empty($_POST['submitted']))
+        {
+            $city = 'SELECT * FROM cv ORDER BY id DESC';
 
+        }
     }
 }

@@ -11,11 +11,6 @@
 
     <header>
       <nav>
-          <ul>
-              <li><a href="<?= $view->path('home'); ?>">Home</a></li>
-              <li><a href="<?= $view->path('search'); ?>">Search</a></li>
-          </ul>
-      </nav>
     </header>
 
     <div class="container">
