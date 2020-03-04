@@ -15,7 +15,7 @@ class AdminModel extends Model
     protected $token;
     protected $role;
     protected $createdAt;
-    protected $modifieAt;
+    protected $modifiedAt;
 
     public static function insert($title, $content)
     {
@@ -50,7 +50,7 @@ class AdminModel extends Model
     /**
      * @return mixed
      */
-    public function getname()
+    public function getName()
     {
         return $this->name;
     }
@@ -58,7 +58,7 @@ class AdminModel extends Model
     /**
      * @param mixed $name
      */
-    public function setname($name): void
+    public function setName($name): void
     {
         $this->name = $name;
     }
@@ -66,7 +66,7 @@ class AdminModel extends Model
     /**
      * @return mixed
      */
-    public function getsurname()
+    public function getsUsername()
     {
         return $this->surname;
     }
@@ -74,7 +74,7 @@ class AdminModel extends Model
     /**
      * @param mixed $surname
      */
-    public function setsurname($surname): void
+    public function setsUsername($surname): void
     {
         $this->surname = $surname;
     }
@@ -82,7 +82,7 @@ class AdminModel extends Model
     /**
      * @return mixed
      */
-    public function getmail()
+    public function getMail()
     {
         return $this->mail;
     }
@@ -90,7 +90,7 @@ class AdminModel extends Model
     /**
      * @param mixed $mail
      */
-    public function setmail($mail): void
+    public function setMail($mail): void
     {
         $this->mail = $mail;
     }
@@ -98,7 +98,7 @@ class AdminModel extends Model
     /**
      * @return mixed
      */
-    public function getpassword()
+    public function getPassword()
     {
         return $this->password;
     }
@@ -106,7 +106,7 @@ class AdminModel extends Model
     /**
      * @param mixed $password
      */
-    public function setpassword($password): void
+    public function setPassword($password): void
     {
         $this->password = $password;
     }
@@ -114,7 +114,7 @@ class AdminModel extends Model
     /**
      * @return mixed
      */
-    public function gettoken()
+    public function getToken()
     {
         return $this->token;
     }
@@ -122,7 +122,7 @@ class AdminModel extends Model
     /**
      * @param mixed $token
      */
-    public function settoken($token): void
+    public function setToken($token): void
     {
         $this->token = $token;
     }
@@ -146,7 +146,7 @@ class AdminModel extends Model
     /**
      * @return mixed
      */
-    public function getcreatedAt()
+    public function getCreatedAt()
     {
         return $this->createdAt;
     }
@@ -154,7 +154,7 @@ class AdminModel extends Model
     /**
      * @param mixed $createdAt
      */
-    public function setcreatedAt($createdAt): void
+    public function setCreatedAt($createdAt): void
     {
         $this->createdAt = $createdAt;
     }
@@ -162,15 +162,15 @@ class AdminModel extends Model
     /**
      * @return mixed
      */
-    public function getmodifiedAt()
+    public function getModifiedAt()
     {
-        return $this->modifieAt;
+        return $this->modifiedAt;
     }
 
     /**
-     * @param mixed $modifiedAt
+     * @param mixed $modifieddAt
      */
-    public function setmodifiedAt($modifiedAt): void
+    public function setModifieddAt($modifiedAt): void
     {
         $this->modifiedAt = $modifiedAt;
     }
