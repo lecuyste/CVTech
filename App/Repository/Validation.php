@@ -1,5 +1,5 @@
 <?php
-namespace App\Service;
+namespace App\Repository;
 
 class Validation
 {
@@ -20,6 +20,18 @@ class Validation
      * @param email $email
      * @return string $error
      */
+
+    public function generateErrorRepeat($value, $value2, $text){
+        if($value != $value2){
+            return '<p style="color: red">'.$text.'</p>';
+        }
+    }
+
+    public function generateErrorCheckBox($value, $text){
+        if(!$value){
+            return $text;
+        }
+    }
 
     public function emailValid($email)
     {
@@ -58,6 +70,22 @@ class Validation
         }
         return $error;
 
+    }
+
+    public function validChamp($errors,$value,$key,$min,$max,$empty = false)
+    {
+        if(!empty($value)) {
+            if(mb_strlen($value) < $min) {
+                $errors[$key] = 'Minimum ' .$min . ' caractères';
+            } elseif (mb_strlen($value) > $max) {
+                $errors[$key] = 'Maximum ' .$max . ' caractères';
+            }
+        } else {
+            if(!$empty){
+                $errors[$key] = 'Veuillez renseigner ce champ';
+            }
+        }
+        return $errors;
     }
 
 

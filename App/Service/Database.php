@@ -1,5 +1,5 @@
 <?php
-namespace App\Weblitzer;
+namespace App\Service;
 use \PDO;
 
 /**
@@ -82,6 +82,4 @@ class Database {
         $query = $this->getPdo()->prepare($sql);
         $query->execute($bind);
     }
-
-
 }

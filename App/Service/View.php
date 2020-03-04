@@ -1,5 +1,5 @@
 <?php
-namespace App\Weblitzer;
+namespace App\Service;
 /**
  *  class View
  *  Helper pour les view

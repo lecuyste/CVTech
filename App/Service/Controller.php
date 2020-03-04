@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Weblitzer;
+namespace App\Service;
 
-use App\Weblitzer\Config;
-use App\Weblitzer\View;
+use App\Service\Config;
+use App\Service\View;
 
 /**
  *

@@ -2,8 +2,8 @@
 
 namespace App;
 
-use App\Weblitzer\Database;
-use App\Weblitzer\Config;
+use App\Service\Database;
+use App\Service\Config;
 
 /**
  *

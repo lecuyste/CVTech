@@ -175,7 +175,10 @@ pdo.php
 /node_modules/
 /package-lock.json
 
-config/config.php
+
 /vendor
 .idea/
 testMail.php
+config/config.php
+
+
