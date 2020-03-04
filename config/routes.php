@@ -14,6 +14,9 @@ if($page == 'homepage') {
 } elseif ($page == 'redirection') {
     $controller = new App\Controller\ContactController();
     $controller->redirection();
+} elseif ($page == 'candidat') {
+    $controller = new App\Controller\CandidatController();
+    $controller->candidat();
 } else {
     $controller = new App\Controller\DefaultController();
     $controller->Page404();

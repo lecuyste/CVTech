@@ -5,7 +5,7 @@ FONT
 /////////// */
 body {
     font-family: 'Open Sans Condensed', sans-serif;
-    background: white;
+    background: #3C3C3C;
 }
 h1 {
     position: absolute;
@@ -56,7 +56,7 @@ nav {
 }
 
 #login {
-    margin-left: 339px;
+    margin-left: 190px;
 }
 
 
@@ -257,6 +257,7 @@ SECTION SERVICE GESTION DES POSITIONS
     display: flex;
     align-items: center;
 }
+
 
 .box_candidat {
     flex-direction: row;
