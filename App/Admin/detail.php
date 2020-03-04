@@ -1,6 +1,6 @@
 <?php
 
 
-echo '<p>' . $admin->content . '</p>';
+echo '<p>' . $users->content . '</p>';
 
 ?>
