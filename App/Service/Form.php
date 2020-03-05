@@ -47,7 +47,7 @@ class Form
      */
     public function input($name, $placeholder = '', $type = 'text', $data = null, $keyup = null, $class = '')
     {
-        return $this->arround('<input type="'.$type.'" id="'.$name.'" name="'.$name.'" value="'.$this->getValue($name,$data).'" onkeyup = "'.$keyup.'">', $class);
+        return $this->arround('<input type="'.$type.'" id="'.$name.'" name="'.$name.'" placeholder = "'.$placeholder.'" value="'.$this->getValue($name,$data).'" onkeyup = "'.$keyup.'">', $class);
     }
 
     /**
