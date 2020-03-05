@@ -43,7 +43,7 @@
                 </li>
                 <li><a class="button btn-1" href="<?= $view->path('homepage'); ?>">home</a></li>
                 <li><a class="button btn-1" href="#services">services</a></li>
-                <li><a class="button btn-1" href="">about</a></li>
+                <li><a class="button btn-1" href="#section2">about</a></li>
               <li><a class="button btn-1" href="<?= $view->path('contact'); ?>">contact</a></li>
                 <?php if (empty($_SESSION)) { ?>
                 <li id="login">
