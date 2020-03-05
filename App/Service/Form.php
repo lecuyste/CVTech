@@ -45,9 +45,9 @@ class Form
      * @param $name string
      * @return string
      */
-    public function input($name, $placeholder, $type = 'text', $data = null)
+    public function input($name, $placeholder = '', $type = 'text', $data = null, $keyup = null, $class = '')
     {
-        return $this->arround('<input type="'.$type.'" id="'.$name.'" name="'.$name.'" placeholder="'.$placeholder.'" value="'.$this->getValue($name,$data).'">');
+        return $this->arround('<input type="'.$type.'" id="'.$name.'" name="'.$name.'" value="'.$this->getValue($name,$data).'" onkeyup = "'.$keyup.'">', $class);
     }
 
     /**
@@ -55,9 +55,9 @@ class Form
      * @param null $data
      * @return string
      */
-    public function textarea($name, $placeholder, $data = null)
+    public function textarea($name, $data = null)
     {
-        return $this->arround('<textarea name="'.$name.'" placeholder="'.$placeholder.'" rows="10" cols="120">'.$this->getValue($name,$data).'</textarea>');
+        return $this->arround('<textarea name="'.$name.'">'.$this->getValue($name,$data).'</textarea>');
     }
 
     /**
@@ -86,9 +86,9 @@ class Form
      * @param $name
      * @return string
      */
-    public function label($name, $class = '')
+    public function label($name)
     {
-        return '<label for="'.$name.'" class="'. $class . '">'.ucfirst($name).'</label>';
+        return '<label for="'.$name.'">'.ucfirst($name).'</label>';
     }
 
     /**
@@ -111,5 +111,22 @@ class Form
         return $this->arround('<input type="'.$type.'" id="'.$name.'" name="'.$name.'" class="'.$class.'" value="'
             .$value.'">');
     }
-
+    public function selectCheckbox($name, $idname, $entitys, $column, $idd = 'id')
+    {
+        $html = '<select name="'.$name.'" id="'.$idname.'"multiple>';
+        foreach ($entitys as $entity) {
+            $html .= '<option value="'.$entity->$idd.'">'.$entity->$column.'</option>';
+        }
+        $html .= '</select>';
+        return $html;
+    }
+    public function buttonAjoutInput($name, $list, $msg){
+        return '<button type="button" id="' . $name . '" onclick="ajoutItems(\''.$list.'\')">' . $msg . '</button>';
+    }
+    public function buttonCloneDiv($name, $class, $msg){
+        return '<button type="button" id="' . $name . '" onclick="cloneDiv(\''.$class.'\')">' . $msg . '</button>';
+    }
+    public function buttonRemoveClone($name, $cloneId, $msg){
+        return '<button type="button" id="' . $name . '" onclick="removeClone(\''.$cloneId.'\')">' . $msg . '</button>';
+    }
 }

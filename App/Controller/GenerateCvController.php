@@ -4,6 +4,7 @@
 namespace App\Controller;
 
 
+use App\Model\JardiniersModel;
 use App\Model\languageModel;
 use App\Service\Form;
 use App\Weblitzer\Controller;
@@ -42,7 +43,7 @@ class GenerateCvController extends Controller
             $errors['experienceDate'] = $valid->validateYear($post['experienceDate'], 'date d\'expérience');
             if ($valid->IsValid($errors)) {
                 GenerateCvModel::insert($post['titre'], $post['phone'], $post['street'], $post['codePostal'], $post['city'], $post['lien'], $post['langages'], $cvs['id'], $cvs['id'], $post['experienceName'], $post['experienceDate'], $post['experienceCity'], $post['formationName'], $post['formationDate'], $post['formationCity'] );
-                $this->redirect('index.php?page=testgenerateCv');
+                $this->redirect('index.php?page=testGenerateCv');
             }
         }
         $form = new Form($errors);

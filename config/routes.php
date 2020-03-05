@@ -7,6 +7,12 @@ if(!empty($_GET['page'])) {
 if($page == 'homepage') {
     $controller = new App\Controller\DefaultController();
     $controller->index();
+} else if ($page =='testgenerateCv'){
+    $controller = new App\Controller\GenerateCvController();
+    $controller->generateCV();
+} else if($page == 'testMail'){
+    $controller = App\Controller\TestMailController();
+    $controller ->mail();
 }
 elseif ($page == 'inscription') {
     $controller = new App\Controller\UserController();
