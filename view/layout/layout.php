@@ -5,20 +5,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CVTech</title>
-    <link rel="stylesheet" href="asset/css/styleYann.css">
-    <link rel="stylesheet" href="asset/css/styleMathis.css">
+    <link rel="stylesheet" type="text/css" href="asset/css/styleYann.css">
+    <link rel="stylesheet" type="text/css" href="asset/css/styleMathis.css">
     <link rel="stylesheet" type="text/css" href="asset/css/form.css">
     <link rel="stylesheet" type="text/css" href="asset/css/candidat.css">
     <link rel="stylesheet" type="text/css" href="asset/css/select.css"/>
     <link rel="stylesheet" type="text/css" href="asset/css/recruteur.css"/>
+    <link rel="stylesheet" type="text/css" href="asset/css/generateCv.css"/>
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&display=swap" rel="stylesheet">
+
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.25.0/slimselect.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
     <script
-            src="https://code.jquery.com/jquery-2.2.4.js"
-            integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
-            crossorigin="anonymous"></script>
+        src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.25.0/slimselect.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.25.0/slimselect.min.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -94,8 +101,6 @@
 </footer>
 
 <script src="asset/js/main.js"></script>
-<script src="https://unpkg.com/scrollreveal"></script>
-<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
 </body>
 </html>
