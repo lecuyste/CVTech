@@ -41,10 +41,10 @@ class GenerateCvController extends Controller
             $errors['experienceName'] = $valid->textValid($post['experienceName'], 'nom d\'experience', 2, 50);
             $errors['experienceCity'] = $valid->textValid($post['experienceCity'], 'ville de formation', 2, 50);
             $errors['experienceDate'] = $valid->validateYear($post['experienceDate'], 'date d\'expérience');
-            if ($valid->IsValid($errors)) {
+            /*if ($valid->IsValid($errors)) {
                 GenerateCvModel::insert($post['titre'], $post['phone'], $post['street'], $post['codePostal'], $post['city'], $post['lien'], $post['langages'], $cvs['id'], $cvs['id'], $post['experienceName'], $post['experienceDate'], $post['experienceCity'], $post['formationName'], $post['formationDate'], $post['formationCity'] );
                 $this->redirect('index.php?page=testGenerateCv');
-            }
+            }*/
         }
         $form = new Form($errors);
         $this->render('app.testGenerateCv.testgenerateCv', array(

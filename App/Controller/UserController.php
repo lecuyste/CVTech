@@ -13,7 +13,6 @@ class UserController extends Controller
     public function inscription()
     {
         $title = 'Inscription';
-
         $errors = array();
         $form = new Form($errors, 'post');
         if (isset($_POST['submitted'])) {
@@ -79,5 +78,4 @@ class UserController extends Controller
     {
         $this->render('app.logs.logout');
     }
-
 }

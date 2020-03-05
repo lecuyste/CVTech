@@ -1,0 +1,74 @@
+@import "reset.css";
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.wrapForm {
+    width:100%;
+    max-width: 840px;
+    margin:0 auto;
+    background-color: #cccccc;
+}
+.lignes {width:100%;height:3px;margin: 10px auto;background-color: black;}
+
+#globalForm {background-color: #cccccc;padding: 125px 10px 20px 10px;}
+h2.textintro {text-align: center;margin: 15px 0 15px 0; color: black; font-style : italic;}
+label{ display: block;padding-left: 30px;margin-bottom: 5px;font-size: 1.2em;margin-top: 50px; color: black;}
+.error {display: inline-block; color: red; font-style: italic;}
+form div {float: left;}
+.w50 {width:50%;}
+.w100 {width:100%;}
+input[type=text] {
+    width: 100%;
+    border:2px solid black;
+}
+#mail {
+    width: 98%;
+}
+input {
+    height:50px;
+}
+input[type=text], input[type=email],textarea {
+    background-color: #3E5B80;
+    color: #cccccc;
+    font-size: 1.2em;
+    padding-left: 30px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    border-width: thin;
+    border-color: black;
+    outline: none;
+}
+::placeholder {
+    color: #cccccc;
+    font-size: 1em;
+}
+textarea {
+    padding-top: 10px;
+    margin-bottom: 10px;
+    resize: none;
+    width: 100%;
+}
+input[type=submit] {
+    cursor:pointer;
+    border:none;
+    display: block;
+    margin: 40px auto;
+    background-color: #657080;
+    width:275px;
+    color:#A1B4CC;
+    font-size: 1.2em;
+    border-radius:4px;
+}
+input[type=submit]:hover {
+    color: #657080;
+    background-color:#A1B4CC;
+}
+.form-control {
+    width: 100%;
+}
+
+@media screen and (max-width: 665px){
+    .w50 {width:100%;}
+    input,input[type=text] {width: 100%;}
+}
