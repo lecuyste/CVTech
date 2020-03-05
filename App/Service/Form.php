@@ -55,9 +55,9 @@ class Form
      * @param null $data
      * @return string
      */
-    public function textarea($name, $data = null)
+    public function textarea($name, $placeholder = '', $data = null)
     {
-        return $this->arround('<textarea name="'.$name.'">'.$this->getValue($name,$data).'</textarea>');
+        return $this->arround('<textarea name="'.$name.'" placeholder = "'.$placeholder.'" rows="10" cols="120">'.$this->getValue($name,$data).'</textarea>');
     }
 
     /**

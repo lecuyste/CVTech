@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="asset/css/styleMathis.css">
     <link rel="stylesheet" type="text/css" href="asset/css/form.css">
     <link rel="stylesheet" type="text/css" href="asset/css/candidat.css">
+    <link rel="stylesheet" type="text/css" href="asset/css/select.css"/>
+    <link rel="stylesheet" type="text/css" href="asset/css/recruteur.css"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.25.0/slimselect.min.js"></script>
