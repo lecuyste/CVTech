@@ -1,0 +1,150 @@
+@import "reset2.css";
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+
+.background {
+    background-color:rgba(0,0,0,0.7);
+    padding-bottom: 341px;
+}
+
+.title_home {
+    text-align: center;
+    font-size: 3em;
+    padding-top: 270px;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.espace {
+    display: inline-block;
+}
+
+.platform {
+    text-align: center;
+    display: inline-block;
+    float: left;
+    font-size: 1.7em;
+    text-decoration: none;
+    color: white;
+    border: white 2px solid;
+    margin-top: 35px;
+    padding: 5px 10px;
+}
+
+.wrap100 {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.candidat {
+    margin-left: 36%;
+    margin-right: 13%;
+}
+
+.who {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+
+#section2 {
+    height: 60%;
+}
+
+#pres {
+    text-align: center;
+    padding-top: 110px;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+#pres2 {
+    text-align: center;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+#team {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.team {
+    float: left;
+    max-width: 1200px;
+    width: 33.3333%;
+    margin-top: 30px;
+}
+
+.team img {
+    margin-left: 31%;
+}
+
+.desc {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#section3 {
+    height: 40%;
+}
+
+#team2 {
+    width: 150px;
+    float: left;
+    border-radius: 50%;
+    margin-left: 25%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.desc2 {
+    display: inline-block;
+    position: absolute;
+    float: left;
+    margin-top: 260px;
+}
+
+.descm {
+    right: 29%;
+}
+
+.desct {
+    left: 29.5%;
+}
+
+.team_title {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2.5em;
+    margin-top: 25px;
+}
+
+footer {
+    height: 100px;
+    background-color: black;
+}
+
+.linkf {
+    color: white;
+    padding-right: 100px;
+    letter-spacing: 3px;
+    margin-bottom: -15px;
+}
+
+.link1 {
+    margin-left: 25%;
+}
+
+.list {
+    padding-top: 40px;
+}

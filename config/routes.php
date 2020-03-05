@@ -1,28 +1,26 @@
 <?php
-$page = 'homepage';
-if(!empty($_GET['page'])) {
+$page = 'home';
+if (!empty($_GET['page'])) {
     $page = $_GET['page'];
 }
 
-if($page == 'homepage') {
+
+if ($page == 'home') {
     $controller = new App\Controller\DefaultController();
     $controller->index();
-} else if ($page =='testgenerateCv'){
+} else if ($page == 'testgenerateCv') {
     $controller = new App\Controller\GenerateCvController();
     $controller->generateCV();
-} else if($page == 'testMail'){
+} else if ($page == 'testMail') {
     $controller = App\Controller\TestMailController();
-    $controller ->mail();
-}
-elseif ($page == 'inscription') {
+    $controller->mail();
+} elseif ($page == 'inscription') {
     $controller = new App\Controller\UserController();
     $controller->inscription();
-}
-elseif ($page == 'login') {
+} elseif ($page == 'login') {
     $controller = new App\Controller\UserController();
     $controller->login();
-}
-elseif($page == 'logout'){
+} elseif ($page == 'logout') {
     $controller = new App\Controller\UserController();
     $controller->logout();
 } elseif ($page == 'contact') {
@@ -34,6 +32,9 @@ elseif($page == 'logout'){
 } elseif ($page == 'candidat') {
     $controller = new App\Controller\CandidatController();
     $controller->candidat();
+} elseif ($page == 'search') {
+    $controller = new App\Controller\SearchController();
+    $controller->searchCity();
 } else {
     $controller = new App\Controller\DefaultController();
     $controller->Page404();

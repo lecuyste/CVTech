@@ -8,6 +8,13 @@ function onKeyup(t,$elemId) {
 new SlimSelect({
     select: '#languages'
 });
+new SlimSelect({
+    select: '#slim-select1'
+});
+
+new SlimSelect({
+    select: '#slim-select2'
+});
 
 function ajoutItems($list) {
     var NewItems = $('.'+$list +' input').first().clone();
