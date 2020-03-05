@@ -7,7 +7,6 @@ body {
 .background {
     background-color:rgba(0,0,0,0.7);
     padding-bottom: 341px;
-
 }
 
 .title_home {
@@ -17,32 +16,76 @@ body {
     color: white;
     letter-spacing: 5px;
 }
-
-.espace {
-    display: inline-block;
+.wrap_section1 {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
 }
-
+.box_buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.btn_candidat {
+    flex: 1 1 400px;
+}
+.btn_recruteur {
+    flex: 1 1 400px;
+}
+div .platform p a {
+    color: white;
+}
 .platform {
     text-align: center;
-    display: inline-block;
-    float: left;
     font-size: 1.7em;
     text-decoration: none;
-    color: white;
-    border: white 2px solid;
     margin-top: 35px;
     padding: 5px 10px;
+    letter-spacing: 0.05rem;
+    transition: 0.5s all ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.platform:before {
+    border-top: 0.1rem solid white;
+    border-bottom: 0.1rem solid white;
+    display: block;
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: 100%;
+    transition: 0.48s all ease-in-out;
+}
+
+
+.platform:hover {
+    letter-spacing: 0.4rem;
+}
+
+.platform:hover:before {
+    left: 30%;
+    right: 30%;
+}
+@media screen and (max-width: 640px) {
+    .box_buttons {
+        flex-direction: column;
+    }
+    .btn_candidat {
+        flex: 1 1 auto;
+    }
+    .btn_recruteur {
+        flex: 1 1 auto;
+    }
+
 }
 
 .wrap100 {
     margin: 0 auto;
     max-width: 1200px;
     width: 100%;
-}
-
-.candidat {
-    margin-left: 36%;
-    margin-right: 13%;
 }
 
 .who {
@@ -55,6 +98,7 @@ body {
 
 #section2 {
     height: 60%;
+    background-color: #3C3C3C;
 }
 
 #pres {
@@ -63,6 +107,7 @@ body {
     font-size: 1.2em;
     letter-spacing: 1px;
     line-height: 30px;
+    color: white;
 }
 
 #pres2 {
@@ -70,6 +115,8 @@ body {
     font-size: 1.2em;
     letter-spacing: 1px;
     line-height: 30px;
+    color: white;
+    font-style: italic;
 }
 
 #team {
@@ -91,6 +138,7 @@ body {
 .desc {
     text-align: center;
     margin-top: 15px;
+    color: white;
 }
 
 #section3 {
@@ -103,6 +151,7 @@ body {
     border-radius: 50%;
     margin-left: 25%;
     margin-top: 20px;
+    padding-bottom: 30px;
     position: relative;
 }
 
@@ -111,6 +160,7 @@ body {
     position: absolute;
     float: left;
     margin-top: 400px;
+    color: white;
 }
 
 .descm {
@@ -126,12 +176,12 @@ body {
     text-decoration: underline;
     font-size: 2.5em;
     margin-top: 25px;
+    color: white;
 }
 
 footer {
     height: 100px;
     background-color: black;
-    margin-top: 100px;
 }
 
 .linkf {
