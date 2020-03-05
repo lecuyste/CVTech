@@ -28,6 +28,8 @@ class UserController extends Controller
             if ($v->IsValid($errors) == true) {
                 $hash = password_hash($post['password1'], PASSWORD_DEFAULT);
                 UserModel::insertUser($post['nom'], $post['prenom'], $post['mail'], $hash);
+                $this->redirect('index.php?page=login');
+                unset($_POST);
             }
         }
 
@@ -60,6 +62,8 @@ class UserController extends Controller
                         'mail' => $user->mail,
 
                     );
+                    $this->redirect('index.php?page=homepage');
+                    unset($_POST);
                 } else {
                         $errors['password'] = 'Mot de passe ou mail incorrect';
                 }
@@ -77,5 +81,7 @@ class UserController extends Controller
     public function logout()
     {
         $this->render('app.logs.logout');
+        $this->redirect('index.php?page=homepage');
+        unset($_POST);
     }
 }
