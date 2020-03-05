@@ -11,9 +11,9 @@ body {
 }
 .lignes {width:100%;height:3px;margin: 10px auto;background-color: black;}
 
-#contactForm {background-color: #cccccc;padding: 125px 10px 20px 10px;}
-#loginForm {background-color: #cccccc;padding: 125px 10px 20px 10px;height: 621px;}
-#inscriptionForm {background-color: #cccccc;padding: 125px 10px 20px 10px; height: 621px;}
+#contactForm {background-color: #cccccc; padding: 10%;}
+#loginForm {background-color: #cccccc; padding: 21%;}
+#inscriptionForm {background-color: #cccccc; padding: 16%;}
 p.textintro {text-align: center;margin: 15px 0 15px 0; color: black; font-style : italic;}
 label{ display: block;padding-left: 30px;margin-bottom: 5px;font-size: 1.2em;margin-top: 50px; color: black;}
 .error {display: inline-block; color: red; font-style: italic;}
