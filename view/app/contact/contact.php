@@ -1,12 +1,12 @@
-<section id="globalForm">
+<section id="contactForm">
     <div class="wrapForm">
         <h2 style="font-size: 2.8em;text-align: center; text-transform: uppercase; color: #3E5B80;">
             <?= $message; ?>
         </h2>
-        <h2 class="textintro">Vous avez une question ? </h2>
+        <p class="textintro">Vous avez une question ? </p>
         <div class="lignes"></div>
 
-        <form action="#globalForm" method="post">
+        <form action="#contactForm" method="post">
             <div class="w50">
                 <?php echo $form->label('Votre email :'); ?>
                 <?php echo $form->input('mail', 'Ex : monadresse@monmail.com'); ?>

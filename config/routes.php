@@ -5,7 +5,7 @@ if (!empty($_GET['page'])) {
 }
 
 
-if ($page == 'home') {
+if ($page == 'homepage') {
     $controller = new App\Controller\DefaultController();
     $controller->index();
 } else if ($page == 'testgenerateCv') {

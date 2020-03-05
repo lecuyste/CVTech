@@ -47,14 +47,14 @@
               <li><a class="button btn-1" href="<?= $view->path('contact'); ?>">contact</a></li>
                 <?php if (empty($_SESSION)) { ?>
                 <li id="login">
-                    <a class="button btn-1" href="#">connexion</a>
+                    <a class="button btn-1" href="<?= $view->path('login') ?>">connexion</a>
                     <ul class="hidden">
                         <li><a class="button btn-1" href="#">candidat</a></li>
                         <li><a class="button btn-1" href="#">recruteur</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a class="button btn-1" href="">inscription</a>
+                    <a class="button btn-1" href="<?= $view->path('inscription') ?>">inscription</a>
                     <ul class="hidden">
                         <li><a class="button btn-1" href="#">candidat</a></li>
                         <li><a class="button btn-1" href="#">recruteur</a></li>
