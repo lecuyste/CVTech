@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&display=swap" rel="stylesheet">
 
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <!--<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>-->
 
     <script
         src="https://code.jquery.com/jquery-2.2.4.js"

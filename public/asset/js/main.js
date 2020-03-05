@@ -1,36 +1,3 @@
-var res = "";
-
-function onKeyup(t,$elemId) {
-    var  res = t.value;
-    var elem = document.getElementById($elemId);
-    elem.innerHTML = res;
-}
-new SlimSelect({
-    select: '#languages'
-});
-new SlimSelect({
-    select: '#slim-select1'
-});
-
-new SlimSelect({
-    select: '#slim-select2'
-});
-
-function ajoutItems($list) {
-    var NewItems = $('.'+$list +' input').first().clone();
-    $(NewItems).appendTo('.'+$list);
-    return false;
-}
-function cloneDiv($class) {
-    var NewItems = $('.'+$class).first().clone();
-    $(NewItems).appendTo('.'+$class);
-    return false;
-}
-function removeClone($cloneId){
-    $($cloneId + ':last-child').remove();
-    return false;
-}
-
 ScrollReveal().reveal('.service_candidat0, .service_candidat1', {
     delay: 500,
     interval:500,
@@ -57,4 +24,36 @@ function myFunction() {
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var scrolled = (winScroll / height) * 100;
     document.getElementById("myBar").style.width = scrolled + "%";
+};
+
+function onKeyup(t,$elemId) {
+    var res = "";
+    var  res = t.value;
+    var elem = document.getElementById($elemId);
+    elem.innerHTML = res;
+}
+new SlimSelect({
+    select: '#languages'
+});
+new SlimSelect({
+    select: '#slim-select1'
+});
+
+new SlimSelect({
+    select: '#slim-select2'
+});
+
+function ajoutItems($list) {
+    var NewItems = $('.'+$list +' input').first().clone();
+    $(NewItems).appendTo('.'+$list);
+    return false;
+};
+function cloneDiv($class) {
+    var NewItems = $('.'+$class).first().clone();
+    $(NewItems).appendTo('.'+$class);
+    return false;
+};
+function removeClone($cloneId){
+    $($cloneId + ':last-child').remove();
+    return false;
 };

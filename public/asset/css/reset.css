@@ -75,3 +75,10 @@ body { font:400 16px/1.3 Verdana, sans-serif;color:#464646; background-color: #f
 a{
 	text-decoration: none;
 }
+html.sr .load-hidden {
+    visibility: hidden;
+}
+/* extension */
+html.sr .widget {
+    visibility: hidden;
+}
