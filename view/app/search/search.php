@@ -2,13 +2,14 @@
 cover;">
 
     <div class="background">
-<h3 class="welcome">Bienvenue Recruteur,</h3>
+<h3 class="welcome">Bienvenue sur l'espace recruteurs,</h3>
 
-<p class="consulting_cv">Consultez les CV des candidats facilement grâce à une interface personnalisée :  </p>
-
+<p class="consulting_cv">Consultez les CV des candidats facilement grâce à une interface personnalisée.</p>
+        <div class="barre"></div>
 
 <div class="wrap101">
-    <h4 class="search">Rechercher :</h4>
+
+    <h4 class="search">Rechercher un CV :</h4>
     <form method="get" action="search.php">
         <div class="city">
             <label for="ville">Où ?</label>
@@ -27,9 +28,9 @@ cover;">
                         echo '<option>'.$searchKeywords->getKeywords().'</option>';
                     }?>
                 </select>
-        </div>
 
-            <input id="search_submit" type="submit" name="submitted" value="Rechercher">
+        </div>
+        <input id="search_submit" type="submit" name="submitted" value="Rechercher">
 
     </form>
 </div>
