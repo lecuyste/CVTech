@@ -1,0 +1,45 @@
+@import "reset.css";
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#cv {
+    float: right;
+    margin-right: 200px;
+    width: 500px;
+    height: 1000px;
+    background-color: #cccccc;
+    border : 1px black solid;
+}
+#titleCV {
+    padding: 5px 0;
+    text-align: center;
+    border : 1px black solid;
+}
+#titreCV {
+    width: 100%;
+    word-break: break-all;
+}
+#coord {
+    background-color: darkgray;
+    margin-top: 8px;
+    width: 20%;
+    margin-left: 10px
+}
+#nomSurname {
+    width: 100%;
+    word-break: break-all;
+    background-color: coral;
+}
+#adresse {
+    background-color: darkcyan;
+}
+#num {
+    width: 100%;
+    word-break: break-all;
+}
+#nameStreet {
+    width: 100%;
+    word-break: break-all;"
+}

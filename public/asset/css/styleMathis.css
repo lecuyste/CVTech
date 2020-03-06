@@ -1,0 +1,202 @@
+@import "reset.css";
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.background {
+    background-color:rgba(0,0,0,0.7);
+    padding-bottom: 341px;
+}
+
+.title_home {
+    text-align: center;
+    font-size: 3em;
+    padding-top: 270px;
+    color: white;
+    letter-spacing: 5px;
+}
+.wrap_section1 {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+}
+.box_buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.btn_candidat {
+    flex: 1 1 400px;
+}
+.btn_recruteur {
+    flex: 1 1 400px;
+}
+div .platform p a {
+    color: white;
+}
+.platform {
+    text-align: center;
+    font-size: 1.7em;
+    text-decoration: none;
+    margin-top: 35px;
+    padding: 5px 10px;
+    letter-spacing: 0.05rem;
+    transition: 0.5s all ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.platform:before {
+    border-top: 0.1rem solid white;
+    border-bottom: 0.1rem solid white;
+    display: block;
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: 100%;
+    transition: 0.48s all ease-in-out;
+}
+
+
+.platform:hover {
+    letter-spacing: 0.4rem;
+}
+
+.platform:hover:before {
+    left: 30%;
+    right: 30%;
+}
+@media screen and (max-width: 640px) {
+    .box_buttons {
+        flex-direction: column;
+    }
+    .btn_candidat {
+        flex: 1 1 auto;
+    }
+    .btn_recruteur {
+        flex: 1 1 auto;
+    }
+
+}
+
+.wrap100 {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #3C3C3C;
+}
+
+.who {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+
+#section2 {
+    height: 60%;
+    background-color: #3C3C3C;
+}
+
+#pres {
+    text-align: center;
+    padding-top: 110px;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: white;
+}
+
+#pres2 {
+    text-align: center;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: white;
+    font-style: italic;
+}
+
+#team {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.team {
+    float: left;
+    max-width: 1200px;
+    width: 33.3333%;
+    margin-top: 30px;
+}
+
+.team img {
+    margin-left: 31%;
+}
+
+.desc {
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+}
+
+#section3 {
+    height: 460px;
+    background-color: #3C3C3C;
+}
+
+#team2 {
+    width: 150px;
+    float: left;
+    border-radius: 50%;
+    margin-left: 25%;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.desc2 {
+    display: inline-block;
+    position: absolute;
+    float: left;
+    margin-top: 400px;
+    color: white;
+}
+
+.descm {
+    right: 29%;
+}
+
+.desct {
+    left: 29.5%;
+}
+
+.team_title {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2.5em;
+    margin-top: 25px;
+    color: white;
+}
+
+footer {
+    height: 100px;
+    background-color: black;
+}
+
+.linkf {
+    color: white;
+    padding-right: 100px;
+    letter-spacing: 3px;
+    margin-bottom: -15px;
+}
+
+.link1 {
+    margin-left: 25%;
+}
+
+.list {
+    padding-top: 40px;
+}
